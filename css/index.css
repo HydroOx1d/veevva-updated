@@ -143,5 +143,215 @@ select {
   font-weight: 500;
   font-style: normal;
 }
+/*!
+ * * Hamburgers
+ * * @description Tasty CSS-animated hamburgers
+ * * @author Jonathan Suh @jonsuh
+ * * @site https://jonsuh.com/hamburgers
+ * * @link https://github.com/jonsuh/hamburgers
+ * */
+.hamburger {
+  padding: 0px 0px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #ffffff;
+}
+
+.hamburger-box {
+  width: 20px;
+  height: 15px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -1.5px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 20px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -6px;
+}
+.hamburger-inner::after {
+  bottom: -6px;
+}
+
+/* * Squeeze
+* */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 24px;
+}
+.header__inner--block-1 {
+  width: 665px;
+  display: flex;
+  align-items: center;
+}
+.header__inner--block-2 {
+  width: 575px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.header__logo {
+  font-size: 22px;
+  font-family: "MulishSemiBold", sans-serif;
+  margin-right: 33px;
+}
+.header__categories {
+  cursor: pointer;
+  margin-right: 23px;
+}
+.header__categories--menu {
+  background-color: #040034;
+  padding: 11px 23px 10px 14px;
+  border-radius: 24.5px;
+}
+.header__categories--name {
+  color: #ffffff;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+}
+.header__searchbar {
+  width: 376px;
+}
+.header__searchbar input {
+  width: 100%;
+  height: 48px;
+  border-radius: 24.5px;
+  border: 2px solid #040034;
+  padding-left: 45px;
+  background: url("../images/header/search.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
+}
+.header__searchbar input::placeholder {
+  font-size: 14px;
+  font-family: "MulishRegular", sans-serif;
+  color: #858182;
+}
+.header__notif {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__notif--name {
+  font-family: "MulishBold", sans-serif;
+  font-size: 12px;
+}
+.header__basket {
+  padding-left: 12px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__basket img {
+  margin-left: -10px;
+}
+.header__basket--name {
+  font-family: "MulishBold", sans-serif;
+  font-size: 12px;
+  padding-top: 3px;
+}
+.header__marketplace {
+  margin-left: 8px;
+}
+.header__marketplace--btn {
+  background-color: #EA4C67;
+  font-size: 18px;
+  padding: 13px 32px;
+  color: #ffffff;
+}
+.header__login {
+  margin-left: 18px;
+}
+.header__login--btn {
+  font-size: 18px;
+  color: #040034;
+  border: 2px solid #040034;
+  padding: 13px 35px;
+}
+.header__profile {
+  background: #040034;
+  padding: 8.5px 9px;
+  border-radius: 50%;
+  margin-left: 13px;
+}
+
+.container {
+  width: calc(100% - 120px);
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 24.5px;
+  text-decoration: none;
+  font-family: "MulishMedium", sans-serif;
+}
 
 /*# sourceMappingURL=index.css.map */

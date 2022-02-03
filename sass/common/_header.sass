@@ -1,0 +1,84 @@
+.header
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 24px
+    &--block-1
+      width: 665px
+      display: flex
+      align-items: center
+    &--block-2
+      width: 575px
+      display: flex
+      justify-content: flex-end
+      align-items: center
+  &__logo
+    font-size: 22px
+    font-family: $mulish-semi
+    margin-right: 33px
+  &__categories
+    cursor: pointer
+    margin-right: 23px
+    &--menu
+      background-color: $dark-blue
+      padding: 11px 23px 10px 14px
+      border-radius: 24.5px
+    &--name
+      color: $white
+      font-family: $mulish-medium
+      font-size: 18px
+  &__searchbar
+    width: 376px
+    input
+      width: 100%
+      height: 48px
+      border-radius: 24.5px
+      border: 2px solid $dark-blue
+      padding-left: 45px
+      background: url('../images/header/search.svg')
+      background-repeat: no-repeat
+      background-position: 14px 12px
+      &::placeholder
+        font-size: 14px
+        font-family: $mulish-regular
+        color: #858182
+  &__notif
+    padding-top: 5px
+    display: flex
+    flex-direction: column
+    align-items: center
+    &--name
+      font-family: $mulish-bold
+      font-size: 12px
+  &__basket
+    padding-left: 12px
+    padding-top: 8px
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      margin-left: -10px
+    &--name
+      font-family: $mulish-bold
+      font-size: 12px
+      padding-top: 3px
+  &__marketplace
+    margin-left: 8px
+    &--btn
+      background-color: $pink
+      font-size: 18px
+      padding: 13px 32px
+      color: $white
+  &__login
+    margin-left: 18px
+    &--btn
+      font-size: 18px
+      color: $dark-blue
+      border: 2px solid $dark-blue
+      padding: 13px 35px
+  &__profile
+    background: $dark-blue
+    padding: 8.5px 9px
+    border-radius: 50%
+    margin-left: 13px
