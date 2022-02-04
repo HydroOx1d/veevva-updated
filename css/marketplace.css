@@ -1,0 +1,89 @@
+.categories {
+  padding-top: 48px;
+}
+.categories__title {
+  text-align: center;
+  color: #040034;
+}
+.categories__title--text {
+  font-family: "MulishExtraBold", sans-serif;
+  font-size: 32px;
+}
+.categories__block {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+.categories__category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.categories__category--body {
+  text-align: center;
+}
+.categories__category--title {
+  display: inline-block;
+  width: 80px;
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #040034;
+}
+
+.bestsellers {
+  padding-top: 55px;
+}
+.bestsellers__title {
+  display: flex;
+  justify-content: space-between;
+}
+.bestsellers__title--text {
+  font-family: "MulishExtraBold", sans-serif;
+  font-size: 32px;
+  color: #040034;
+}
+.bestsellers__title--link {
+  transform: translateY(30px);
+}
+.bestsellers__title--link a {
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #181818;
+}
+.bestsellers__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.bestsellers__card {
+  display: inline-block;
+  max-width: 315px;
+  padding-bottom: 25px;
+}
+.bestsellers__card--desc {
+  padding-top: 16px;
+  padding-left: 14px;
+}
+.bestsellers__card--price {
+  font-family: "PoppinsSemiBold", sans-serif;
+  font-size: 20px;
+  padding-left: 14px;
+  padding-top: 6px;
+}
+.bestsellers__desc--text {
+  display: inline-block;
+  max-width: 235px;
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 14px;
+  line-height: 1.1;
+}
+.bestsellers__desc--text strong {
+  font-family: "PoppinsBold", sans-serif;
+  color: #181818;
+}
+
+/*# sourceMappingURL=marketplace.css.map */

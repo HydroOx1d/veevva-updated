@@ -1,0 +1,43 @@
+.bestsellers
+  padding-top: 55px
+  &__title
+    display: flex
+    justify-content: space-between
+    &--text
+      font-family: $mulish-extra
+      font-size: 32px
+      color: $dark-blue
+    &--link
+      transform: translateY(30px)
+      a
+        font-family: $poppins-regular
+        font-size: 18px
+        text-decoration: none
+        color: #181818
+  &__cards
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-between
+    padding-top: 35px
+  &__card
+    display: inline-block
+    max-width: 315px
+    padding-bottom: 25px
+    &--desc
+      padding-top: 16px
+      padding-left: 14px
+    &--price
+      font-family: $poppins-semi
+      font-size: 20px
+      padding-left: 14px
+      padding-top: 6px
+  &__desc
+    &--text
+      display: inline-block
+      max-width: 235px
+      font-family: $poppins-regular
+      font-size: 14px
+      line-height: 1.1
+      strong
+        font-family: $poppins-bold
+        color: #181818
