@@ -301,6 +301,7 @@ select {
 .header__notif--name {
   font-family: "MulishBold", sans-serif;
   font-size: 12px;
+  transform: translateY(2px);
 }
 .header__basket {
   padding-left: 12px;
@@ -315,25 +316,25 @@ select {
 .header__basket--name {
   font-family: "MulishBold", sans-serif;
   font-size: 12px;
-  padding-top: 3px;
+  transform: translate(-2px, 3px);
 }
 .header__marketplace {
   margin-left: 8px;
 }
 .header__marketplace--btn {
-  background-color: #EA4C67;
   font-size: 18px;
   padding: 13px 32px;
+  background-color: #EA4C67;
   color: #ffffff;
 }
 .header__login {
   margin-left: 18px;
 }
 .header__login--btn {
+  padding: 11px 35px;
   font-size: 18px;
   color: #040034;
   border: 2px solid #040034;
-  padding: 13px 35px;
 }
 .header__profile {
   background: #040034;
