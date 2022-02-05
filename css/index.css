@@ -280,6 +280,126 @@ select {
   margin-left: 13px;
 }
 
+.footer {
+  background-color: #040034;
+  margin-top: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #ffffff;
+}
+.footer__inner {
+  display: flex;
+}
+.footer__brand {
+  display: inline-block;
+}
+.footer__brand--copyright {
+  margin-top: 27px;
+}
+.footer__copyright--text {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 16px;
+}
+.footer__partners {
+  margin-left: 138px;
+  margin-top: 3px;
+}
+.footer__partners--title {
+  margin-bottom: 34px;
+}
+.footer__partners--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 22px;
+}
+.footer__partners--buttons {
+  display: inline-flex;
+  flex-direction: column;
+}
+.footer__partners--btn {
+  background-color: #EA4C67;
+  text-align: center;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+.footer__partners--btn a {
+  display: inline-block;
+  padding: 10px 74px;
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer__partners--btn:nth-child(2) {
+  background: transparent;
+  border: 2px solid #ffffff;
+}
+.footer__marketplace {
+  margin-left: 84px;
+  margin-top: 3px;
+}
+.footer__marketplace--title {
+  margin-bottom: 26px;
+}
+.footer__marketplace--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 22px;
+}
+.footer__marketplace--item {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer__company {
+  margin-left: 163px;
+  margin-top: 3px;
+}
+.footer__company--title {
+  margin-bottom: 26px;
+}
+.footer__company h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 22px;
+}
+.footer__company--item {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer__company--email {
+  display: flex;
+  align-items: center;
+  margin-left: 2px;
+}
+.footer__company--social {
+  display: flex;
+  margin-top: 15px;
+}
+.footer__company--connection {
+  margin-top: 41px;
+}
+.footer__email--link {
+  margin-left: 10px;
+}
+.footer__email--link a {
+  color: #ffffff;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer__social--link {
+  background-color: #1D1948;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  margin-right: 16px;
+}
+.footer__social--link img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .container {
   width: calc(100% - 120px);
   max-width: 1320px;
