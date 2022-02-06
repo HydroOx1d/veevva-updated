@@ -1,5 +1,6 @@
 .categories {
   padding-top: 48px;
+  position: relative;
 }
 .categories__title {
   text-align: center;
@@ -13,27 +14,63 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 40px 20px;
+  margin: 40px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .categories__category {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 146px;
+  height: 146px;
+}
+.categories__category:hover {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
 }
 .categories__category--body {
   text-align: center;
 }
 .categories__category--title {
-  display: inline-block;
+  display: inline-flex;
   width: 80px;
   font-family: "MulishSemiBold", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   color: #040034;
+  cursor: pointer;
+}
+.categories__category--title img {
+  transform: translate(5px, 2px);
+}
+.categories__category--list {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+  background-color: #ffffff;
+  text-align: left;
+  position: absolute;
+  top: 170px;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+}
+.categories__category--list.list-active {
+  display: block;
+}
+.categories__category--list.category__right {
+  right: 0;
+}
+.categories__category--list.category__left {
+  left: 0;
+}
+.categories__category--item {
+  padding: 15px 25px;
+  font-size: 15px;
+  font-family: "MulishMedium", sans-serif;
+  border-bottom: 0.5px solid rgba(5, 3, 32, 0.15);
 }
 
 .bestsellers {
-  padding-top: 53px;
+  padding-top: 20px;
 }
 .bestsellers__title {
   display: flex;
@@ -64,7 +101,7 @@
   max-width: 315px;
   margin-bottom: 25px;
   border-radius: 6px;
-  box-shadow: 6px 6px 10px -13px #000;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
 }
 .bestsellers__card--desc {
   padding-top: 16px;
@@ -105,7 +142,7 @@
   width: 413px;
   border-radius: 30px;
   background: #F5F5F5;
-  box-shadow: 6px 6px 10px -13px #000;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.04);
 }
 .topsellers__card--header {
   background-color: #ffffff;
