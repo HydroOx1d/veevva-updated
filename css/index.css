@@ -344,9 +344,13 @@ select {
   font-size: 22px;
 }
 .footer__marketplace--item {
-  font-family: "MulishMedium", sans-serif;
-  font-size: 16px;
   margin-bottom: 10px;
+}
+.footer__marketplace--item a {
+  font-family: "MulishMedium", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
 }
 .footer__company {
   margin-left: 163px;
@@ -360,9 +364,13 @@ select {
   font-size: 22px;
 }
 .footer__company--item {
+  margin-bottom: 10px;
+}
+.footer__company--item a {
   font-family: "MulishMedium", sans-serif;
   font-size: 16px;
-  margin-bottom: 10px;
+  text-decoration: none;
+  color: #ffffff;
 }
 .footer__company--email {
   display: flex;

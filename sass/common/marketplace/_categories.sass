@@ -1,6 +1,5 @@
 .categories
   padding-top: 48px
-  position: relative
   &__title
     text-align: center
     color: $dark-blue
@@ -9,7 +8,6 @@
       font-size: 32px
   &__block
     display: flex
-    align-items: baseline
     justify-content: space-between
     margin: 40px 20px
     border-bottom: 1px solid rgba(0,0,0, .1)
@@ -18,10 +16,12 @@
     display: flex
     flex-direction: column
     align-items: center
+    justify-content: space-between
     width: 146px
     height: 146px
-    &:hover
-      box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1)
+    margin-bottom: 10px
+    position: relative
     &--body
       text-align: center
     &--title
@@ -40,13 +40,16 @@
       background-color: $white
       text-align: left
       position: absolute
-      top: 170px
+      top: 157px
+      left: 0
       z-index: 1
       border-radius: 0px 0px 20px 20px
+
+      width: 223px
       &.list-active
         display: block
       &.category__right
-        right: 0
+        transform: translateX(-78px)
       &.category__left
         left: 0
     &--item

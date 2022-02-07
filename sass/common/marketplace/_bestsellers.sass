@@ -1,5 +1,5 @@
 .bestsellers
-  padding-top: 20px
+  padding-top: 32px
   &__title
     display: flex
     justify-content: space-between
@@ -13,13 +13,14 @@
         font-family: $poppins-regular
         font-size: 18px
         text-decoration: none
-        color: #181818
+        color: rgba(24, 24, 24, 0.7)
   &__cards
     display: flex
     flex-flow: row wrap
     justify-content: space-between
     padding-top: 35px
   &__card
+    cursor: pointer
     display: inline-block
     max-width: 315px
     margin-bottom: 25px
@@ -29,7 +30,7 @@
       padding-top: 16px
       padding-left: 14px
     &--price
-      font-family: $poppins-semi
+      font-family: $poppins-bold
       font-size: 20px
       padding-left: 14px
       padding-top: 6px
