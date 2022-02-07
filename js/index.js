@@ -29,3 +29,17 @@ document.body.addEventListener('click', function(e) {
     }
   }
 })
+
+// Filter
+
+const filter_header = document.querySelectorAll('#filter_header')
+const filter_submenu = document.querySelectorAll('#filter_submenu')
+const filter_arrow_bottom = document.querySelectorAll('.filter__title--arrow img')
+
+for(let i = 0, len = filter_header.length; i < len; i++) {
+  let head = filter_header[i]
+  head.addEventListener('click', function() {
+    filter_submenu[i].classList.toggle('active-submenu')
+    filter_submenu[i].classList.contains('active-submenu') ? filter_arrow_bottom[i].style.transform = 'rotate(180deg)' : filter_arrow_bottom[i].style.transform = 'rotate(0)'
+  })
+}
