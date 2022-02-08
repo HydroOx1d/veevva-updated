@@ -200,6 +200,24 @@ select {
 .header__categories {
   cursor: pointer;
   margin-right: 23px;
+  position: relative;
+}
+.header__categories--category {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 255px;
+  z-index: 2;
+  background-color: #ffffff;
+  border-radius: 0px 0px 20px 20px;
+  filter: drop-shadow(4px 4px 10px rgba(4, 0, 52, 0.12));
+  top: 75px;
+}
+.header__categories--category.header-category-active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 .header__categories--menu {
   background-color: #040034;
@@ -279,10 +297,28 @@ select {
   border-radius: 50%;
   margin-left: 13px;
 }
+.header__category--item {
+  padding: 18px 25px;
+  border-bottom: 0.5px solid rgba(5, 3, 32, 0.15);
+  transition: all 0.1s ease-in;
+}
+.header__category--item:last-child {
+  border: none;
+}
+.header__category--item:hover {
+  background: #FBFDFF;
+  box-shadow: 0px 0px 20px -15px #000;
+}
+.header__category--item a {
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: #040034;
+}
 
 .footer {
   background-color: #040034;
-  margin-top: 80px;
+  margin-top: 65px;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #ffffff;
@@ -291,50 +327,56 @@ select {
   display: flex;
 }
 .footer__brand {
+  width: 127px;
   display: inline-block;
+  margin-right: 53px;
 }
 .footer__brand--copyright {
   margin-top: 27px;
+  line-height: 27px;
 }
 .footer__copyright--text {
   font-family: "MulishRegular", sans-serif;
   font-size: 16px;
 }
-.footer__partners {
-  margin-left: 138px;
+.footer__influen {
   margin-top: 3px;
+  margin-right: 54px;
 }
-.footer__partners--title {
+.footer__influen.manifacture {
+  margin-right: 45px;
+}
+.footer__influen--title {
   margin-bottom: 34px;
 }
-.footer__partners--title h2 {
+.footer__influen--title h2 {
   font-family: "MulishBold", sans-serif;
   font-size: 22px;
 }
-.footer__partners--buttons {
+.footer__influen--buttons {
   display: inline-flex;
   flex-direction: column;
 }
-.footer__partners--btn {
+.footer__influen--btn {
   background-color: #EA4C67;
   text-align: center;
   border-radius: 100px;
   margin-bottom: 20px;
 }
-.footer__partners--btn a {
+.footer__influen--btn a {
   display: inline-block;
   padding: 10px 74px;
   font-family: "MulishSemiBold", sans-serif;
   font-size: 18px;
   color: #ffffff;
 }
-.footer__partners--btn:nth-child(2) {
+.footer__influen--btn:nth-child(2) {
   background: transparent;
   border: 2px solid #ffffff;
 }
 .footer__marketplace {
-  margin-left: 84px;
   margin-top: 3px;
+  margin-right: 163px;
 }
 .footer__marketplace--title {
   margin-bottom: 26px;
@@ -353,7 +395,6 @@ select {
   text-decoration: none;
 }
 .footer__company {
-  margin-left: 163px;
   margin-top: 3px;
 }
 .footer__company--title {

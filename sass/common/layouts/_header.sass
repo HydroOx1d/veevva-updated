@@ -21,6 +21,25 @@
   &__categories
     cursor: pointer
     margin-right: 23px
+    position: relative
+    &--category
+      display: none
+      visibility: hidden
+      opacity: 0
+
+      position: absolute
+      width: 255px
+      z-index: 2
+      background-color: $white
+      border-radius: 0px 0px 20px 20px
+      filter: drop-shadow(4px 4px 10px rgba(4, 0, 52, 0.12))
+
+      top: 75px
+      &.header-category-active
+        display: block
+        visibility: visible
+        opacity: 1
+
     &--menu
       background-color: $dark-blue
       padding: 11px 23px 10px 14px
@@ -85,3 +104,18 @@
     padding: 8.5px 9px
     border-radius: 50%
     margin-left: 13px
+  &__category
+    &--item
+      padding: 18px 25px
+      border-bottom: 0.5px solid rgba(5, 3, 32, 0.15)
+      transition: all .1s ease-in
+      &:last-child
+        border: none
+      &:hover
+        background: #FBFDFF
+        box-shadow: 0px 0px 20px -15px #000
+      a
+        font-family: $mulish-semi
+        font-size: 18px
+        text-decoration: none
+        color: $dark-blue

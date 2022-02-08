@@ -1,9 +1,11 @@
 //Humburger
 const humburger = document.querySelector('.hamburger')
-const header_categories = document.querySelector('.header__categories')
+const header_categories = document.querySelector('.header__categories--menu')
+const header_category = document.querySelector('.header__categories--category')
 
 header_categories.addEventListener('click', function() {
   humburger.classList.toggle('is-active')
+  header_category.classList.toggle('header-category-active')
 })
 
 // categories

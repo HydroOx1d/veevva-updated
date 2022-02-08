@@ -8,7 +8,7 @@
       font-size: 32px
       color: $dark-blue
     &--link
-      transform: translateY(30px)
+      transform: translateY(35px)
       a
         font-family: $poppins-regular
         font-size: 18px
@@ -25,7 +25,10 @@
     max-width: 315px
     margin-bottom: 25px
     border-radius: 6px
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06)
+    transition: box-shadow .1s ease-in-out
+    &:hover
+      box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
     &--desc
       padding-top: 16px
       padding-left: 14px
@@ -34,6 +37,7 @@
       font-size: 20px
       padding-left: 14px
       padding-top: 6px
+      padding-bottom: 6px
   &__desc
     &--text
       display: inline-block

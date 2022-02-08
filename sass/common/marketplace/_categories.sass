@@ -9,7 +9,7 @@
   &__block
     display: flex
     justify-content: space-between
-    margin: 40px 20px
+    margin: 40px 0
     border-bottom: 1px solid rgba(0,0,0, .1)
     position: relative
   &__category
@@ -19,9 +19,12 @@
     justify-content: space-between
     width: 146px
     height: 146px
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1)
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08)
     margin-bottom: 10px
     position: relative
+    transition: box-shadow .1s ease-in-out
+    &:hover
+      box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2)
     &--body
       text-align: center
     &--title
@@ -58,6 +61,8 @@
     &--item
       padding: 15px 25px
       border-bottom: 0.5px solid rgba(5, 3, 32, 0.15)
+      &:last-child
+        border: none
       a
         font-size: 15px
         font-family: $mulish-medium
