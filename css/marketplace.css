@@ -36,8 +36,12 @@
   font-family: "MulishSemiBold", sans-serif;
   font-size: 16px;
   line-height: 1.2;
-  color: #040034;
+  color: rgba(24, 24, 24, 0.7);
   cursor: pointer;
+  transition: color 0.1s ease;
+}
+.categories__category--title:hover {
+  color: #040034;
 }
 .categories__category--title img {
   transform: translate(5px, 2px);
@@ -65,9 +69,17 @@
 }
 .categories__category--item {
   padding: 15px 25px;
+  border-bottom: 0.5px solid rgba(5, 3, 32, 0.15);
+}
+.categories__category--item a {
   font-size: 15px;
   font-family: "MulishMedium", sans-serif;
-  border-bottom: 0.5px solid rgba(5, 3, 32, 0.15);
+  color: rgba(24, 24, 24, 0.7);
+  transition: color 0.1s ease;
+  text-decoration: none;
+}
+.categories__category--item a:hover {
+  color: #040034;
 }
 
 .bestsellers {
@@ -124,7 +136,7 @@
 }
 .bestsellers__desc--text strong {
   font-family: "PoppinsBold", sans-serif;
-  color: #181818;
+  color: #040034;
 }
 
 .topsellers {
