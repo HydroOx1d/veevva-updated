@@ -187,7 +187,7 @@ select {
   align-items: center;
 }
 .header__inner--block-2 {
-  width: 575px;
+  width: 655px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -294,6 +294,9 @@ select {
   border: 2px solid #040034;
   font-family: "MulishMedium", sans-serif;
 }
+.header__login--btn__cart {
+  padding: 11px 27px;
+}
 .header__profile {
   background: #040034;
   padding: 8.5px 9px;
@@ -325,6 +328,9 @@ select {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #ffffff;
+}
+.footer__catalog {
+  margin-top: 85px;
 }
 .footer__inner {
   display: flex;

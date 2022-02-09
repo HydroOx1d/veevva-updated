@@ -3,7 +3,7 @@
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 19px 24px 20px 19px
+    padding: 22px 24px 20px 19px
     border: 0.5px solid rgba(5, 3, 32, 0.15)
     &--title
       display: flex
@@ -31,7 +31,7 @@
         display: block
         opacity: 1
         visibility: visible
-        padding: 20px 23px
+        padding: 23px 23px
   &__submenu
     &--search
       max-width: 301px
@@ -53,16 +53,24 @@
       flex-direction: column
       margin-top: 20px
       div
-        margin-bottom: 9px
-        padding: 7px 7px
         background: $white
         border: 0.5px solid #DAD9DE
         border-radius: 9px
-        font-size: 17px
-        font-family: $mulish-regular
         min-width: 144px
+        margin-bottom: 9px
+        &:hover
+          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
+        a
+          display: block
+          padding: 7px 7px
+          font-size: 17px
+          font-family: $mulish-regular
+          text-decoration: none
+          color: $dark-blue
         &:last-child
-          margin-bottom: 0
+            margin-bottom: 0
+    &--brand
+      margin-top: 18px
     &--price-1
       display: flex
       justify-content: space-between
@@ -108,3 +116,4 @@
         font-family: $mulish-bold
         font-size: 16px
         color: $dark-blue
+        cursor: pointer
