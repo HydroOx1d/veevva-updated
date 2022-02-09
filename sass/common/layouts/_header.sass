@@ -62,35 +62,36 @@
       &::placeholder
         font-size: 14px
         font-family: $mulish-regular
-        color: #858182
+        color: rgba(133, 129, 130, 0.7)
   &__notif
-    padding-top: 5px
-    display: flex
-    flex-direction: column
-    align-items: center
-    &--name
-      font-family: $mulish-bold
-      font-size: 12px
-      transform: translateY(2px)
-  &__basket
-    padding-left: 12px
-    padding-top: 8px
     display: flex
     flex-direction: column
     align-items: center
     img
-      margin-left: -10px
+      transform: translate(-2px, 2px)
     &--name
       font-family: $mulish-bold
       font-size: 12px
-      transform: translate(-2px, 3px)
+      transform: translate(-3px,4px)
+  &__basket
+    padding-left: 12px
+    display: flex
+    flex-direction: column
+    align-items: center
+    img
+      transform: translate(-3px, 2px)
+    &--name
+      font-family: $mulish-bold
+      font-size: 12px
+      transform: translate(-3px, 6px)
   &__marketplace
-    margin-left: 8px
+    margin-left: 19px
     &--btn
       font-size: 18px
       padding: 13px 32px
       background-color: $pink
       color: $white
+      font-family: $mulish-bold
   &__login
     margin-left: 18px
     &--btn
@@ -98,6 +99,7 @@
       font-size: 18px
       color: $dark-blue
       border: 2px solid $dark-blue
+      font-family: $mulish-medium
 
   &__profile
     background: $dark-blue

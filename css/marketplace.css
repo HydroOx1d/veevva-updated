@@ -1,5 +1,5 @@
 .categories {
-  padding-top: 48px;
+  padding-top: 50px;
 }
 .categories__title {
   text-align: center;
@@ -120,7 +120,7 @@
   cursor: pointer;
   display: inline-block;
   max-width: 315px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   border-radius: 6px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
   transition: box-shadow 0.1s ease-in-out;
@@ -136,15 +136,15 @@
   font-family: "PoppinsBold", sans-serif;
   font-size: 20px;
   padding-left: 14px;
-  padding-top: 6px;
+  padding-top: 5px;
   padding-bottom: 6px;
 }
 .bestsellers__desc--text {
   display: inline-block;
   max-width: 235px;
-  font-family: "PoppinsRegular", sans-serif;
+  font-family: "PoppinsLight", sans-serif;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 .bestsellers__desc--text strong {
   font-family: "PoppinsBold", sans-serif;
@@ -152,7 +152,7 @@
 }
 
 .topsellers {
-  padding-top: 85px;
+  padding-top: 92px;
 }
 .topsellers__title--link {
   transform: translateY(39px);
@@ -164,7 +164,7 @@
   flex-flow: row wrap;
 }
 .topsellers__card {
-  margin-bottom: 47px;
+  margin-bottom: 52px;
   width: 413px;
   border-radius: 30px;
   background: #F5F5F5;
@@ -205,7 +205,7 @@
 }
 
 .newproducts {
-  padding-top: 80px;
+  padding-top: 73px;
 }
 .newproducts__cards {
   padding-top: 37px;

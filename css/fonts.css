@@ -1,85 +1,91 @@
 @font-face {
   font-family: "MulishBlack";
-  src: url("/fonts/Mulish-Black.woff") format("woff"), url("/fonts/Mulish-Black.woff2") format("woff2");
+  src: url("../fonts/Mulish-Black.woff") format("woff"), url("../fonts/Mulish-Black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "MulishBlackItalic";
-  src: url("/fonts/Mulish-BlackItalic.woff") format("woff"), url("/fonts/Mulish-BlackItalic.woff2") format("woff2");
+  src: url("../fonts/Mulish-BlackItalic.woff") format("woff"), url("../fonts/Mulish-BlackItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
 }
 @font-face {
   font-family: "MulishExtraBold";
-  src: url("/fonts/Mulish-ExtraBold.woff") format("woff"), url("/fonts/Mulish-ExtraBold.woff2") format("woff2");
+  src: url("../fonts/Mulish-ExtraBold.woff") format("woff"), url("../fonts/Mulish-ExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "MulishExtraBoldItalic";
-  src: url("/fonts/Mulish-ExtraBoldItalic.woff") format("woff"), url("/fonts/Mulish-ExtraBoldItalic.woff2") format("woff2");
+  src: url("../fonts/Mulish-ExtraBoldItalic.woff") format("woff"), url("../fonts/Mulish-ExtraBoldItalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: "MulishBold";
-  src: url("/fonts/Mulish-Bold.woff") format("woff"), url("/fonts/Mulish-Bold.woff2") format("woff2");
+  src: url("../fonts/Mulish-Bold.woff") format("woff"), url("../fonts/Mulish-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "MulishBoldItalic";
-  src: url("/fonts/Mulish-BoldItalic.woff") format("woff"), url("/fonts/Mulish-BoldItalic.woff2") format("woff2");
+  src: url("../fonts/Mulish-BoldItalic.woff") format("woff"), url("../fonts/Mulish-BoldItalic.woff2") format("woff2");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: "MulishSemiBold";
-  src: url("/fonts/Mulish-SemiBold.woff") format("woff"), url("/fonts/Mulish-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Mulish-SemiBold.woff") format("woff"), url("../fonts/Mulish-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "MulishSemiBoldItalic";
-  src: url("/fonts/Mulish-SemiBoldItalic.woff") format("woff"), url("/fonts/Mulish-SemiBoldItalic.woff2") format("woff2");
+  src: url("../fonts/Mulish-SemiBoldItalic.woff") format("woff"), url("../fonts/Mulish-SemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
 }
 @font-face {
   font-family: "MulishMedium";
-  src: url("/fonts/Mulish-Medium.woff") format("woff"), url("/fonts/Mulish-Medium.woff2") format("woff2");
+  src: url("../fonts/Mulish-Medium.woff") format("woff"), url("../fonts/Mulish-Medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "MulishMediumItalic";
-  src: url("/fonts/Mulish-MediumItalic.woff") format("woff"), url("/fonts/Mulish-MediumItalic.woff2") format("woff2");
+  src: url("../fonts/Mulish-MediumItalic.woff") format("woff"), url("../fonts/Mulish-MediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "MulishRegular";
-  src: url("/fonts/Mulish-Regular.woff") format("woff"), url("/fonts/Mulish-Regular.woff2") format("woff2");
+  src: url("../fonts/Mulish-Regular.woff") format("woff"), url("../fonts/Mulish-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "PoppinsBold";
-  src: url("/fonts/Poppins-Bold.woff") format("woff"), url("/fonts/Poppins-Bold.woff2") format("woff2");
+  src: url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "PoppinsSemiBold";
-  src: url("/fonts/Poppins-SemiBold.woff") format("woff"), url("/fonts/Poppins-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Poppins-SemiBold.woff") format("woff"), url("../fonts/Poppins-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "PoppinsRegular";
-  src: url("/fonts/Poppins-Regular.woff") format("woff"), url("/fonts/Poppins-Regular.woff2") format("woff2");
+  src: url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("../fonts/Poppins-Light.woff") format("woff"), url("../fonts/Poppins-Light.woff2") format("woff2");
+  font-weight: 300;
   font-style: normal;
 }
 

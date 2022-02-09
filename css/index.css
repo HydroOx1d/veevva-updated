@@ -245,42 +245,44 @@ select {
 .header__searchbar input::placeholder {
   font-size: 14px;
   font-family: "MulishRegular", sans-serif;
-  color: #858182;
+  color: rgba(133, 129, 130, 0.7);
 }
 .header__notif {
-  padding-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.header__notif img {
+  transform: translate(-2px, 2px);
+}
 .header__notif--name {
   font-family: "MulishBold", sans-serif;
   font-size: 12px;
-  transform: translateY(2px);
+  transform: translate(-3px, 4px);
 }
 .header__basket {
   padding-left: 12px;
-  padding-top: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .header__basket img {
-  margin-left: -10px;
+  transform: translate(-3px, 2px);
 }
 .header__basket--name {
   font-family: "MulishBold", sans-serif;
   font-size: 12px;
-  transform: translate(-2px, 3px);
+  transform: translate(-3px, 6px);
 }
 .header__marketplace {
-  margin-left: 8px;
+  margin-left: 19px;
 }
 .header__marketplace--btn {
   font-size: 18px;
   padding: 13px 32px;
   background-color: #EA4C67;
   color: #ffffff;
+  font-family: "MulishBold", sans-serif;
 }
 .header__login {
   margin-left: 18px;
@@ -290,6 +292,7 @@ select {
   font-size: 18px;
   color: #040034;
   border: 2px solid #040034;
+  font-family: "MulishMedium", sans-serif;
 }
 .header__profile {
   background: #040034;
@@ -318,7 +321,7 @@ select {
 
 .footer {
   background-color: #040034;
-  margin-top: 65px;
+  margin-top: 75px;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #ffffff;
