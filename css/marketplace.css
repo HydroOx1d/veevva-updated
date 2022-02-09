@@ -72,20 +72,20 @@
   left: 0;
 }
 .categories__category--item {
-  padding: 15px 25px;
   border-bottom: 0.5px solid rgba(5, 3, 32, 0.15);
+  text-decoration: none;
 }
 .categories__category--item:last-child {
   border: none;
 }
-.categories__category--item a {
+.categories__category--item div {
+  padding: 15px 25px;
   font-size: 15px;
   font-family: "MulishMedium", sans-serif;
   color: rgba(24, 24, 24, 0.7);
   transition: color 0.1s ease;
-  text-decoration: none;
 }
-.categories__category--item a:hover {
+.categories__category--item div:hover {
   color: #040034;
 }
 
