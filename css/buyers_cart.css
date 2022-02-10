@@ -1,3 +1,58 @@
-
+.cart__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 547px;
+  margin-top: 43px;
+  margin-left: 123px;
+}
+.cart__navigation--step {
+  display: flex;
+  align-items: center;
+}
+.cart__navigation--step:nth-child(2) {
+  transform: translateX(15px);
+  position: relative;
+}
+.cart__navigation--step:nth-child(2):before, .cart__navigation--step:nth-child(2):after {
+  content: "";
+  position: absolute;
+  width: 91px;
+  height: 1px;
+  background-color: #DAD9DE;
+}
+.cart__navigation--step:nth-child(2):before {
+  left: -123px;
+  top: 50%;
+}
+.cart__navigation--step:nth-child(2):after {
+  top: 50%;
+  right: -107px;
+}
+.cart__step--number {
+  font-family: "MulishBold", sans-serif;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  background: #DAD9DE;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 50%;
+}
+.cart__step--number.step-active {
+  background-color: #040034;
+}
+.cart__step--name {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #DAD9DE;
+  margin-left: 8px;
+}
+.cart__step--name.step-active {
+  color: #040034;
+}
 
 /*# sourceMappingURL=buyers_cart.css.map */
