@@ -463,6 +463,9 @@ select {
   max-width: 1320px;
   margin: 0 auto;
 }
+.container__catalog {
+  max-width: 1380px;
+}
 
 .btn {
   border-radius: 24.5px;
