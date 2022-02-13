@@ -59,6 +59,8 @@
   margin-top: 40px;
 }
 .cart__product {
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
   display: flex;
   width: 100%;
   max-width: 792px;
