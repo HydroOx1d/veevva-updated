@@ -1,0 +1,68 @@
+.cart
+  &__shippings
+    width: 100%
+    max-width: 792px
+  &__shipping
+    display: flex
+    justify-content: space-between
+    width: 100%
+    max-width: 792px
+    padding: 32px
+    background: #FFFFFF
+    border: 0.5px solid #DAD9DE
+    border-radius: 9px
+    margin-bottom: 20px
+    transition: box-shadow .1s ease-in
+    &:hover
+      box-shadow: 0px 0px 10px -3px #B1B1B1
+    & .shipping
+      &__address
+        &--name
+          span
+            font-family: $mulish-bold
+            font-size: 20px
+            color: $dark-blue
+        &--street
+          margin-top: 7px
+          span
+            font-family: $mulish-regular
+            font-size: 18px
+            color: #4D4D4D
+        &--number
+          margin-top: 7px
+          span
+            font-family: $mulish-regular
+            font-size: 18px
+            color: #4D4D4D
+      &__settings
+        &--edit
+          font-family: $mulish-bold
+          font-size: 14px
+          color: $dark-blue
+          text-transform: uppercase
+          margin-right: 15px
+          cursor: pointer
+        &--delete
+          font-family: $mulish-bold
+          font-size: 14px
+          color: $pink
+          text-transform: uppercase
+          cursor: pointer
+    &--settings
+      display: flex
+  &__address
+    &--add
+      background: #FFFFFF
+      border: 0.5px solid #DAD9DE
+      border-radius: 9px
+      width: 100%
+      max-width: 792px
+      height: 162px
+      display: flex
+      justify-content: center
+      align-items: center
+      cursor: pointer
+      span
+        font-family: $mulish-bold
+        font-size: 20px
+        color: $dark-blue

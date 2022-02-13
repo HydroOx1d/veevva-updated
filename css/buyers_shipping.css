@@ -1,0 +1,77 @@
+.cart__shippings {
+  width: 100%;
+  max-width: 792px;
+}
+.cart__shipping {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 792px;
+  padding: 32px;
+  background: #FFFFFF;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.1s ease-in;
+}
+.cart__shipping:hover {
+  box-shadow: 0px 0px 10px -3px #B1B1B1;
+}
+.cart__shipping .shipping__address--name span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.cart__shipping .shipping__address--street {
+  margin-top: 7px;
+}
+.cart__shipping .shipping__address--street span {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #4D4D4D;
+}
+.cart__shipping .shipping__address--number {
+  margin-top: 7px;
+}
+.cart__shipping .shipping__address--number span {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #4D4D4D;
+}
+.cart__shipping .shipping__settings--edit {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  text-transform: uppercase;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.cart__shipping .shipping__settings--delete {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #EA4C67;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cart__shipping--settings {
+  display: flex;
+}
+.cart__address--add {
+  background: #FFFFFF;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 792px;
+  height: 162px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cart__address--add span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+
+/*# sourceMappingURL=buyers_shipping.css.map */
