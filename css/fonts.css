@@ -65,6 +65,12 @@
   font-style: normal;
 }
 @font-face {
+  font-family: "MulishLight";
+  src: url("../fonts/Mulish-Light.woff") format("woff"), url("../fonts/Mulish-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
   font-family: "PoppinsBold";
   src: url("../fonts/Poppins-Bold.woff") format("woff"), url("../fonts/Poppins-Bold.woff2") format("woff2");
   font-weight: 700;
