@@ -55,8 +55,14 @@
   color: #040034;
 }
 
-.cart__products {
+.cart {
+  display: flex;
+  justify-content: space-between;
   margin-top: 40px;
+}
+.cart__products {
+  width: 100%;
+  max-width: 792px;
 }
 .cart__product {
   border: 0.5px solid #DAD9DE;
@@ -66,6 +72,7 @@
   max-width: 792px;
   padding: 2px;
   margin-bottom: 10px;
+  background-color: #ffffff;
 }
 .cart__product--body {
   padding-left: 20px;
@@ -194,6 +201,90 @@
   font-family: "MulishBold", sans-serif;
   font-size: 14px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.purchaseinfo {
+  margin-right: 92px;
+  width: 100%;
+  max-width: 355px;
+  padding: 32px 20px;
+  display: inline-block;
+  background: #FFFFFF;
+  border: 0.5px solid #DAD9DE;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+}
+.purchaseinfo__hr {
+  border: 0.5px solid #DAD9DE;
+}
+.purchaseinfo__subtotal {
+  display: flex;
+  justify-content: space-between;
+}
+.purchaseinfo__subtotal--desc {
+  line-height: 1.25;
+}
+.purchaseinfo__subtotal--desc .subtotal__desc--title h4 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.purchaseinfo__subtotal--desc .subtotal__desc--subtitle h5 {
+  font-family: "MulishLight", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  margin: 0;
+}
+.purchaseinfo__subtotal--price {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.purchaseinfo__shipping {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.purchaseinfo__shipping--title h4 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.purchaseinfo__shipping--text p {
+  font-family: "MulishLight", sans-serif;
+  color: #040034;
+  font-size: 14px;
+}
+.purchaseinfo__total {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.purchaseinfo__total--title h3 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.purchaseinfo__total--price span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.purchaseinfo__button {
+  margin-top: 32px;
+  text-align: center;
+}
+.purchaseinfo__button button {
+  padding: 10.5px 40px;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #040034;
+  border: none;
+  border-radius: 24.5px;
   cursor: pointer;
 }
 

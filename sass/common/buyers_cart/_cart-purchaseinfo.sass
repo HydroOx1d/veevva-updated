@@ -1,0 +1,77 @@
+.purchaseinfo
+  margin-right: 92px
+  width: 100%
+  max-width: 355px
+  padding: 32px 20px
+  display: inline-block
+  background: #FFFFFF
+  border: 0.5px solid #DAD9DE
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1)
+  border-radius: 9px
+  &__hr
+    border: .5px solid #DAD9DE
+  &__subtotal
+    display: flex
+    justify-content: space-between
+    &--desc
+      line-height: 1.25
+      & .subtotal
+        &__desc
+          &--title
+            h4
+              font-family: $mulish-bold
+              font-size: 14px
+              color: $dark-blue
+          &--subtitle
+            h5
+              font-family: $mulish-light
+              font-size: 14px
+              color: $dark-blue
+              margin: 0
+    &--price
+      font-family: $mulish-bold
+      font-size: 14px
+      color: $dark-blue
+
+  &__shipping
+    margin-top: 20px
+    margin-bottom: 17px
+    display: flex
+    justify-content: space-between
+    &--title
+      h4
+        font-family: $mulish-bold
+        font-size: 14px
+        color: $dark-blue
+    &--text
+      p
+        font-family: $mulish-light
+        color: $dark-blue
+        font-size: 14px
+  &__total
+    margin-top: 40px
+    margin-bottom: 16px
+    display: flex
+    justify-content: space-between
+    &--title
+      h3
+        font-family: $mulish-bold
+        font-size: 20px
+        color: $dark-blue
+    &--price
+      span
+        font-family: $mulish-bold
+        font-size: 20px
+        color: $dark-blue
+  &__button
+    margin-top: 32px
+    text-align: center
+    button
+      padding: 10.5px 40px
+      font-family: $mulish-medium
+      font-size: 18px
+      color: $white
+      background-color: $dark-blue
+      border: none
+      border-radius: 24.5px
+      cursor: pointer

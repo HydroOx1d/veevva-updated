@@ -1,6 +1,10 @@
 .cart
+  display: flex
+  justify-content: space-between
+  margin-top: 40px
   &__products
-    margin-top: 40px
+    width: 100%
+    max-width: 792px
   &__product
     border: 0.5px solid #DAD9DE
     border-radius: 9px
@@ -9,6 +13,7 @@
     max-width: 792px
     padding: 2px
     margin-bottom: 10px
+    background-color: $white
     &--body
       padding-left: 20px
     &--name
