@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Payment</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/buyers_cart.css">
+  <link rel="stylesheet" href="./css/buyers_payment.css">
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner--block-1">
+          <div class="header__logo">LOGOO</div>
+          <div class="header__categories">
+            <div class="header__categories--menu">
+              <div class="hamburger hamburger--squeeze">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <span class="header__categories--name">Categories</span>
+            </div>
+            <div class="header__categories--category">
+              <div class="header__category--item">
+                <a href="#">Beauty & Personal Care</a>
+              </div>
+              <div class="header__category--item"><a href="#">Baby</a></div>
+              <div class="header__category--item"><a href="#">Electronics</a></div>
+              <div class="header__category--item"><a href="#">Fashion</a></div>
+              <div class="header__category--item">
+                <a href="#">Health & Household</a>
+              </div>
+              <div class="header__category--item"><a href="#">Home & Kitchen</a></div>
+              <div class="header__category--item"><a href="#">Luggage</a></div>
+              <div class="header__category--item"><a href="#">Sports</a></div>
+            </div>
+          </div>
+          <div class="header__searchbar">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="header__inner--block-2">
+          <div class="header__notif">
+            <img src="./images/header/bell.svg" alt="Bell" />
+            <span class="header__notif--name">Notification</span>
+          </div>
+          <div class="header__basket">
+            <img src="./images/header/basket.svg" alt="Basket" />
+            <span class="header__basket--name">Cart</span>
+          </div>
+          <div class="header__marketplace">
+            <a class="btn header__marketplace--btn" href="#"
+            >Go to the marketplace</a
+            >
+          </div>
+          <div class="header__login">
+            <a class="btn header__login--btn header__login--btn__cart" href="#">Log out</a>
+          </div>
+          <div class="header__profile">
+            <img src="./images/header/man.svg" alt="Profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <!--  Cart main   -->
+  <main class="cart__main">
+    <div class="container">
+
+      <!--      Cart navigation   -->
+      <nav class="cart__navigation">
+        <div class="cart__navigation--step">
+          <div class="cart__step--number step-active">1</div>
+          <div class="cart__step--name step-active">Cart</div>
+        </div>
+        <div class="cart__navigation--step">
+          <div class="cart__step--number step-active">2</div>
+          <div class="cart__step--name step-active">Shipping</div>
+        </div>
+        <div class="cart__navigation--step">
+          <div class="cart__step--number step-active">3</div>
+          <div class="cart__step--name step-active">Payment</div>
+        </div>
+      </nav>
+      <!--      Cart navigation end   -->
+
+      <!--      cart  -->
+      <section class="cart">
+
+        <div class="cart__payments">
+
+          <div class="payment__block">
+
+            <div class="payment__block--title">
+              <h2>Payment method</h2>
+            </div>
+
+            <div class="payment__block--card">
+              <div class="payment__card--type">
+                <div class="payment__card--radio">
+                  <input type="radio" name="radio" checked="checked">
+                  <span class="checkmark"></span>
+                </div>
+                <div class="payment__card--text">
+                  <p>Credit/Debit Card</p>
+                </div>
+              </div>
+              <div class="payment__card--variant">
+                <div class="card__variant"><img src="./images/buyers_payment/Visa.svg" alt="card"></div>
+                <div class="card__variant"><img src="./images/buyers_payment/Amex.svg" alt="card"></div>
+                <div class="card__variant"><img src="./images/buyers_payment/Mastercard.svg" alt="card"></div>
+                <div class="card__variant"><img src="./images/buyers_payment/Discover.svg" alt="card"></div>
+                <div class="card__variant--more">and more</div>
+              </div>
+            </div>
+
+            <div class="payment__block--form">
+
+              <div class="payment__form--input card-number">
+                <input type="text" placeholder="Card number">
+              </div>
+
+              <div class="payment__form--input name-on-card">
+                <input type="text" placeholder="Name on card">
+              </div>
+
+              <div class="payment__form--input expiration-date">
+                <input type="text" placeholder="Expiration date (MM / YY)">
+              </div>
+
+              <div class="payment__form--input security-code">
+                <input type="text" placeholder="Security code">
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="purchaseinfo">
+
+          <div class="purchaseinfo__subtotal">
+
+            <div class="purchaseinfo__subtotal--desc">
+              <div class="subtotal__desc--title">
+                <h4>Subtotal</h4>
+              </div>
+              <div class="subtotal__desc--subtitle">
+                <h5>Inclusive all taxes</h5>
+              </div>
+            </div>
+
+            <div class="purchaseinfo__subtotal--price">
+              <span>$28.5</span>
+            </div>
+
+          </div>
+
+          <div class="purchaseinfo__shipping">
+            <div class="purchaseinfo__shipping--title">
+              <h4>Shipping</h4>
+            </div>
+            <div class="purchaseinfo__shipping--text"><p>Calculated at the next step</p></div>
+          </div>
+
+          <hr class="purchaseinfo__hr">
+
+          <div class="purchaseinfo__total">
+            <div class="purchaseinfo__total--title">
+              <h3>Total</h3>
+            </div>
+            <div class="purchaseinfo__total--price">
+              <span>$28.5</span>
+            </div>
+          </div>
+
+          <hr class="purchaseinfo__hr">
+
+          <div class="purchaseinfo__button">
+            <button>Continue to payment</button>
+          </div>
+
+        </div>
+
+      </section>
+      <!--      cart end   -->
+
+    </div>
+  </main>
+  <!--  Cart main end   -->
+
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

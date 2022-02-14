@@ -1,0 +1,105 @@
+.cart__payments {
+  width: 100%;
+  max-width: 792px;
+}
+
+.payment__block {
+  background: #FFFFFF;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding: 32px 142px 32px 32px;
+}
+.payment__block--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.payment__block--card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.payment__block--card .payment__card--type {
+  display: flex;
+  align-items: center;
+}
+.payment__block--card .payment__card--variant {
+  display: flex;
+  align-items: center;
+}
+.payment__block--card .payment__card--variant .card__variant {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.payment__block--card .payment__card--variant .card__variant--more {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 16px;
+  color: #DAD9DE;
+  cursor: pointer;
+}
+.payment__block--card .payment__card--text {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #040034;
+}
+
+.payment__card--radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.payment__card--radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: -2px;
+  left: -4px;
+  z-index: 10;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.payment__card--radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.payment__card--radio input:checked ~ .checkmark {
+  background-color: #040034;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.payment__card--radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.payment__card--radio .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+/*# sourceMappingURL=buyers_payment.css.map */
