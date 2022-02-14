@@ -39,14 +39,16 @@
   color: #4D4D4D;
 }
 .cart__shipping .shipping__settings--edit {
+  margin-right: 15px;
+}
+.cart__shipping .shipping__settings--edit span {
   font-family: "MulishBold", sans-serif;
   font-size: 14px;
   color: #040034;
   text-transform: uppercase;
-  margin-right: 15px;
   cursor: pointer;
 }
-.cart__shipping .shipping__settings--delete {
+.cart__shipping .shipping__settings--delete span {
   font-family: "MulishBold", sans-serif;
   font-size: 14px;
   color: #EA4C67;
