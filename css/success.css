@@ -1,0 +1,38 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 168px;
+}
+.success__desc {
+  margin-top: 40px;
+}
+.success__desc--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.success__desc--text {
+  margin-top: 5px;
+}
+.success__desc--text p {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #040034;
+}
+.success__button {
+  margin-top: 42px;
+}
+.success__button--btn {
+  display: inline-block;
+  padding: 10.5px 48px;
+  background-color: #040034;
+  border-radius: 24.5px;
+  color: #ffffff;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=success.css.map */
