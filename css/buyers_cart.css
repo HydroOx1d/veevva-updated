@@ -288,5 +288,9 @@
   border-radius: 24.5px;
   cursor: pointer;
 }
+.purchaseinfo__button.pay-now button {
+  text-transform: uppercase;
+  padding: 10.5px 80px;
+}
 
 /*# sourceMappingURL=buyers_cart.css.map */
