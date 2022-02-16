@@ -5,8 +5,7 @@
 .cart__shipping {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  max-width: 792px;
+  width: 792px;
   padding: 32px;
   background: #FFFFFF;
   border: 0.5px solid #DAD9DE;
@@ -74,6 +73,71 @@
   font-family: "MulishBold", sans-serif;
   font-size: 20px;
   color: #040034;
+}
+.cart__address--modal {
+  display: none;
+  cursor: default;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 2;
+  padding: 20px 20px;
+  border-radius: 9px;
+  width: 100%;
+  max-width: 645px;
+}
+.cart__modal--form-2 {
+  margin-top: 15px;
+}
+.cart__modal--title {
+  margin-bottom: 20px;
+}
+.cart__modal--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.cart__modal--input {
+  max-width: 608px;
+  margin-bottom: 16px;
+}
+.cart__modal--input input {
+  width: 100%;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  height: 37px;
+  padding-left: 10px;
+}
+.cart__modal--input input::placeholder {
+  opacity: 1;
+  font-family: "MulishRegular", sans-serif;
+  color: #4D4D4D;
+  font-size: 12px;
+}
+.cart__modal--input.small-input {
+  max-width: 220px;
+}
+.cart__modal--input.small-input-zip {
+  max-width: 144px;
+}
+.cart__modal--button {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cart__modal--button button {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  padding: 10.5px 72px;
+  border: none;
+  background-color: #040034;
+  border-radius: 24.5px;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=buyers_shipping.css.map */

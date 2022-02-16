@@ -5,8 +5,7 @@
   &__shipping
     display: flex
     justify-content: space-between
-    width: 100%
-    max-width: 792px
+    width: 792px
     padding: 32px
     background: #FFFFFF
     border: 0.5px solid #DAD9DE
@@ -68,3 +67,59 @@
         font-family: $mulish-bold
         font-size: 20px
         color: $dark-blue
+    &--modal
+      display: none
+      cursor: default
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: $white
+      z-index: 2
+      padding: 20px 20px
+      border-radius: 9px
+      width: 100%
+      max-width: 645px
+  &__modal
+    &--form
+      &-2
+        margin-top: 15px
+    &--title
+      margin-bottom: 20px
+      h2
+        font-family: $mulish-bold
+        font-size: 20px
+        color: $dark-blue
+    &--input
+      max-width: 608px
+      margin-bottom: 16px
+      input
+        width: 100%
+        background: $white
+        border: 0.5px solid #DAD9DE
+        border-radius: 9px
+        height: 37px
+        padding-left: 10px
+        &::placeholder
+          opacity: 1
+          font-family: $mulish-regular
+          color: #4D4D4D
+          font-size: 12px
+      &.small-input
+        max-width: 220px
+        &-zip
+          max-width: 144px
+    &--button
+      display: inline-block
+      position: relative
+      left: 50%
+      transform: translateX(-50%)
+      button
+        font-family: $mulish-medium
+        font-size: 18px
+        color: $white
+        padding: 10.5px 72px
+        border: none
+        background-color: $dark-blue
+        border-radius: 24.5px
+        cursor: pointer

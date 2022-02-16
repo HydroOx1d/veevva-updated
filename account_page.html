@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Account</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/account_page.css">
+  <link rel="stylesheet" href="./css/buyers_shipping.css">
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner--block-1">
+          <div class="header__logo">LOGOO</div>
+          <div class="header__categories">
+            <div class="header__categories--menu">
+              <div class="hamburger hamburger--squeeze">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <span class="header__categories--name">Categories</span>
+            </div>
+            <div class="header__categories--category">
+              <div class="header__category--item">
+                <a href="#">Beauty & Personal Care</a>
+              </div>
+              <div class="header__category--item"><a href="#">Baby</a></div>
+              <div class="header__category--item"><a href="#">Electronics</a></div>
+              <div class="header__category--item"><a href="#">Fashion</a></div>
+              <div class="header__category--item">
+                <a href="#">Health & Household</a>
+              </div>
+              <div class="header__category--item"><a href="#">Home & Kitchen</a></div>
+              <div class="header__category--item"><a href="#">Luggage</a></div>
+              <div class="header__category--item"><a href="#">Sports</a></div>
+            </div>
+          </div>
+          <div class="header__searchbar">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="header__inner--block-2">
+          <div class="header__notif">
+            <img src="./images/header/bell.svg" alt="Bell" />
+            <span class="header__notif--name">Notification</span>
+          </div>
+          <div class="header__basket">
+            <img src="./images/header/basket.svg" alt="Basket" />
+            <span class="header__basket--name">Cart</span>
+          </div>
+          <div class="header__marketplace">
+            <a class="btn header__marketplace--btn" href="#"
+            >Go to the marketplace</a
+            >
+          </div>
+          <div class="header__login">
+            <a class="btn header__login--btn header__login--btn__cart" href="#">Log out</a>
+          </div>
+          <div class="header__profile">
+            <img src="./images/header/man.svg" alt="Profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <!--  Account main   -->
+  <main class="account">
+    <div class="container container__catalog">
+
+      <div class="account__inner">
+
+        <nav class="account__navigation">
+          <a href="#" class="account__navigation--item my-orders">
+          <span class="account__item--image">
+            <img src="./images/account_page/box.svg" alt="box">
+          </span>
+            <span class="account__item--title">
+            <span>My orders</span>
+          </span>
+          </a>
+          <a href="#" class="account__navigation--item item-active">
+          <span class="account__item--image">
+            <img src="./images/account_page/location.svg" alt="location">
+          </span>
+            <span class="account__item--title">
+            <span>My addresses</span>
+          </span>
+          </a>
+        </nav>
+
+        <section class="account__body">
+          <div class="account__body--addresses">
+            <div class="cart__shipping">
+              <div class="cart__shipping--address">
+                <div class="shipping__address--name">
+                  <span>Name Surname</span>
+                </div>
+                <div class="shipping__address--street">
+                  <span>55 9th Street, San Francisco, California, 94153</span>
+                </div>
+                <div class="shipping__address--number">
+                  <span>206 432 6280</span>
+                </div>
+              </div>
+              <div class="cart__shipping--settings">
+                <div class="shipping__settings--edit"><span>Edit</span></div>
+                <div class="shipping__settings--delete"><span>Delete</span></div>
+              </div>
+            </div>
+
+            <div class="cart__address--add">
+              <span>+ Add new address</span>
+
+              <div class="cart__address--modal">
+                <div class="cart__modal--title">
+                  <h2>Add new address</h2>
+                </div>
+                <div class="cart__modal--form">
+                  <div class="cart__modal--input">
+                    <input type="text" placeholder="Full name">
+                  </div>
+                  <div class="cart__modal--input">
+                    <input type="tel" placeholder="Phone #">
+                  </div>
+                  <div class="cart__modal--input">
+                    <input type="text" placeholder="Street address">
+                  </div>
+                  <div class="cart__modal--input">
+                    <input type="text" placeholder="Apartment #">
+                  </div>
+                  <div class="d-flex jcsb cart__modal--form-2">
+                    <div class="cart__modal--input small-input">
+                      <input type="text" placeholder="City">
+                    </div>
+                    <div class="cart__modal--input small-input">
+                      <input type="text" placeholder="State">
+                    </div>
+                    <div class="cart__modal--input small-input-zip">
+                      <input type="text" placeholder="ZIP code">
+                    </div>
+                  </div>
+                  <div class="cart__modal--button">
+                    <button>Add address</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+  <!--  Account main end   -->
+
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

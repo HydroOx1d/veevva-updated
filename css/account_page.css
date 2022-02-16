@@ -1,0 +1,49 @@
+.account__navigation {
+  display: inline-block;
+  margin-left: 3px;
+  position: relative;
+  padding-right: 31px;
+}
+.account__navigation::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 567px;
+  background-color: #DAD9DE;
+  top: 0;
+  right: 0;
+}
+.account__navigation--item {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 20px 105px 19px 28px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+}
+.account__navigation--item.my-orders {
+  margin-top: 42px;
+  margin-bottom: 19px;
+}
+.account__navigation--item.item-active {
+  box-shadow: -0.3px -0.62px 5px 2px #DAD9DE;
+}
+.account__item--title {
+  margin-left: 12px;
+}
+.account__item--title span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+
+.account__inner {
+  display: flex;
+}
+.account__body--addresses {
+  margin-left: 141px;
+  margin-top: 41px;
+}
+
+/*# sourceMappingURL=account_page.css.map */

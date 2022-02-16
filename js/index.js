@@ -45,3 +45,21 @@ for(let i = 0, len = filter_header.length; i < len; i++) {
     filter_submenu[i].classList.contains('active-submenu') ? filter_arrow_bottom[i].style.transform = 'rotate(180deg)' : filter_arrow_bottom[i].style.transform = 'rotate(0)'
   })
 }
+
+
+// address add modal
+
+const address_add_btn = document.querySelector('.cart__address--add')
+const address_add_modal = document.querySelector('.cart__address--modal')
+let bgc = document.createElement('div')
+bgc.className = 'bgc'
+
+address_add_btn.addEventListener('click', function() {
+  address_add_modal.style.display = 'block'
+  document.body.appendChild(bgc)
+})
+
+bgc.onclick = function() {
+  address_add_modal.style.display = 'none'
+  document.body.removeChild(bgc)
+}
