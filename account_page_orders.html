@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Account</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/account_page.css">
+  <link rel="stylesheet" href="./css/buyers_cart.css">
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__inner--block-1">
+          <div class="header__logo">LOGOO</div>
+          <div class="header__categories">
+            <div class="header__categories--menu">
+              <div class="hamburger hamburger--squeeze">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+              </div>
+              <span class="header__categories--name">Categories</span>
+            </div>
+            <div class="header__categories--category">
+              <div class="header__category--item">
+                <a href="#">Beauty & Personal Care</a>
+              </div>
+              <div class="header__category--item"><a href="#">Baby</a></div>
+              <div class="header__category--item"><a href="#">Electronics</a></div>
+              <div class="header__category--item"><a href="#">Fashion</a></div>
+              <div class="header__category--item">
+                <a href="#">Health & Household</a>
+              </div>
+              <div class="header__category--item"><a href="#">Home & Kitchen</a></div>
+              <div class="header__category--item"><a href="#">Luggage</a></div>
+              <div class="header__category--item"><a href="#">Sports</a></div>
+            </div>
+          </div>
+          <div class="header__searchbar">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+        <div class="header__inner--block-2">
+          <div class="header__notif">
+            <img src="./images/header/bell.svg" alt="Bell" />
+            <span class="header__notif--name">Notification</span>
+          </div>
+          <div class="header__basket">
+            <img src="./images/header/basket.svg" alt="Basket" />
+            <span class="header__basket--name">Cart</span>
+          </div>
+          <div class="header__marketplace">
+            <a class="btn header__marketplace--btn" href="#"
+            >Go to the marketplace</a
+            >
+          </div>
+          <div class="header__login">
+            <a class="btn header__login--btn header__login--btn__cart" href="#">Log out</a>
+          </div>
+          <div class="header__profile">
+            <img src="./images/header/man.svg" alt="Profile" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <!--  Account main   -->
+  <main class="account">
+    <div class="container container__catalog">
+
+      <div class="account__inner">
+
+        <nav class="account__navigation">
+          <a href="#" class="account__navigation--item item-active my-orders">
+          <span class="account__item--image">
+            <img src="./images/account_page/box.svg" alt="box">
+          </span>
+            <span class="account__item--title">
+            <span>My orders</span>
+          </span>
+          </a>
+          <a href="#" class="account__navigation--item">
+          <span class="account__item--image">
+            <img src="./images/account_page/location.svg" alt="location">
+          </span>
+            <span class="account__item--title">
+            <span>My addresses</span>
+          </span>
+          </a>
+        </nav>
+
+        <section class="account__products">
+          <!--          Cart product   -->
+          <div class="cart__product">
+            <div class="cart__product--image">
+              <img src="./images/buyers_cart/product.png" alt="product">
+            </div>
+            <div class="cart__product--body">
+              <div class="cart__product--name">
+                <span class="cart__product--name__text">
+                  <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean Dew Foam
+                </span>
+              </div>
+              <div class="cart__product--specific account__product--specific">
+                <div class="cart__product--specific__color"><i class="fa_border"></i></div>
+                <div class="cart__product--specific__sizes"><p>xs</p></div>
+                <div class="cart__product--specific__volume"><p>50 ml</p></div>
+              </div>
+              <div class="account__product--info">
+                <div class="account__product--info__quant">
+                  <p>1 item</p>
+                </div>
+                <div class="account__product--info__ordernumber">
+                  <p>Order # 111-9567187-1885052</p>
+                </div>
+                <div class="account__product--info__date">
+                  <p>01.01.2022</p>
+                </div>
+              </div>
+              <div class="cart__product--price account__product--price">$28.5</div>
+            </div>
+            <div class="cart__product--remove account__product--canceled"><p>Canceled</p></div>
+          </div>
+          <!--          Cart product end  -->
+        </section>
+
+      </div>
+
+    </div>
+  </main>
+  <!--  Account main end   -->
+
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

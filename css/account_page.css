@@ -47,4 +47,26 @@
   margin-top: 41px;
 }
 
+.account__products {
+  padding-top: 43px;
+  padding-left: 142px;
+}
+.account__product--specific {
+  padding-top: 0 !important;
+}
+.account__product--price {
+  margin-top: 4px !important;
+}
+.account__product--info {
+  margin-top: 2px;
+}
+.account__product--info p {
+  font-family: "MulishLight", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.account__product--canceled {
+  margin: 28px 29px 0 auto !important;
+}
+
 /*# sourceMappingURL=account_page.css.map */
