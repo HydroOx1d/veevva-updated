@@ -68,5 +68,28 @@
 .account__product--canceled {
   margin: 28px 29px 0 auto !important;
 }
+.account__product--return {
+  margin: 28px 28px 0 auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.account__product--delivered {
+  display: flex;
+  align-items: center;
+  margin-top: 57px;
+}
+.account__product--delivered p {
+  color: #040034 !important;
+  margin-left: 4px;
+  cursor: default !important;
+}
+.account__product--indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #56D141;
+  border-radius: 50%;
+}
 
 /*# sourceMappingURL=account_page.css.map */
