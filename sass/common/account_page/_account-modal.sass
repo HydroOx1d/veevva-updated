@@ -1,0 +1,49 @@
+.account
+  &__return
+    &--modal
+      display: none
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background-color: $white
+      z-index: 2
+      padding: 29px 30px 20px 48px
+      width: 100%
+      max-width: 645px
+      border: 0.5px solid #DAD9DE
+      border-radius: 9px
+  &__modal
+    &--blocks
+      display: flex
+    &--to
+      margin-left: 100px
+    &--suptitle
+      margin-bottom: 30px
+      p
+        font-family: $mulish-regular
+        font-size: 18px
+        color: #4D4D4D
+
+    &--title
+      margin-bottom: 20px
+      h2
+        font-family: $mulish-bold
+        font-size: 20px
+        color: $dark-blue
+    &--info
+      p
+        font-family: $mulish-regular
+        color: #4D4D4D
+        font-size: 18px
+        margin-bottom: 4px
+    &--button
+      margin-top: 14px
+      float: right
+    &--btn
+      cursor: pointer
+      font-family: $mulish-bold
+      font-size: 16px
+      color: #4D4D4D
+      &:not(:first-of-type)
+        margin-left: 16px

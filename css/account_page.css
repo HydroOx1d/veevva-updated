@@ -92,4 +92,60 @@
   border-radius: 50%;
 }
 
+.account__return--modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  z-index: 2;
+  padding: 29px 30px 20px 48px;
+  width: 100%;
+  max-width: 645px;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+}
+.account__modal--blocks {
+  display: flex;
+}
+.account__modal--to {
+  margin-left: 100px;
+}
+.account__modal--suptitle {
+  margin-bottom: 30px;
+}
+.account__modal--suptitle p {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #4D4D4D;
+}
+.account__modal--title {
+  margin-bottom: 20px;
+}
+.account__modal--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.account__modal--info p {
+  font-family: "MulishRegular", sans-serif;
+  color: #4D4D4D;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.account__modal--button {
+  margin-top: 14px;
+  float: right;
+}
+.account__modal--btn {
+  cursor: pointer;
+  font-family: "MulishBold", sans-serif;
+  font-size: 16px;
+  color: #4D4D4D;
+}
+.account__modal--btn:not(:first-of-type) {
+  margin-left: 16px;
+}
+
 /*# sourceMappingURL=account_page.css.map */

@@ -54,12 +54,29 @@ const address_add_modal = document.querySelector('.cart__address--modal')
 let bgc = document.createElement('div')
 bgc.className = 'bgc'
 
-address_add_btn.addEventListener('click', function() {
-  address_add_modal.style.display = 'block'
-  document.body.appendChild(bgc)
-})
+if(address_add_btn && address_add_modal) {
+  address_add_btn.addEventListener('click', function() {
+    address_add_modal.style.display = 'block'
+    document.body.appendChild(bgc)
+  })
+  bgc.onclick = function() {
+    address_add_modal.style.display = 'none'
+    document.body.removeChild(bgc)
+  }
+}
 
-bgc.onclick = function() {
-  address_add_modal.style.display = 'none'
-  document.body.removeChild(bgc)
+// return modal
+
+const account_delivered_return = document.querySelector('.account__product--return p')
+const account_delivered_modal = document.querySelector('.account__return--modal')
+
+if(account_delivered_modal && account_delivered_return) {
+  account_delivered_return.addEventListener('click', function() {
+    account_delivered_modal.style.display = 'block'
+    document.body.appendChild(bgc)
+  })
+  bgc.onclick = function() {
+    account_delivered_modal.style.display = 'none'
+    document.body.removeChild(bgc)
+  }
 }
