@@ -28,13 +28,11 @@
   display: flex;
   align-items: center;
 }
-.header__logout--btn {
-  border: 2px solid #040034;
-  padding: 8.5px 27.5px;
-  border-radius: 24.5px;
-}
 .header__logout--btn a {
   font-size: 18px;
+  border: 2px solid #040034;
+  padding: 11px 27.5px;
+  border-radius: 24.5px;
 }
 .header__logout--whatisit {
   background-color: #040034;
