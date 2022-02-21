@@ -181,6 +181,9 @@ select {
   justify-content: space-between;
   padding: 26px 0;
 }
+.header__inner--reseller {
+  padding: 13px 0;
+}
 .header__inner--block-1 {
   width: 665px;
   display: flex;
@@ -468,7 +471,7 @@ select {
 }
 
 .btn {
-  border-radius: 24.5px;
+  color: #040034;
   text-decoration: none;
   font-family: "MulishMedium", sans-serif;
 }

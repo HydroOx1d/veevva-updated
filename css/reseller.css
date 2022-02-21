@@ -1,0 +1,48 @@
+.header__account {
+  display: flex;
+  align-items: center;
+}
+.header__account--avatar {
+  width: 100%;
+  max-width: 76px;
+  height: 76px;
+  margin-right: 10px;
+}
+.header__account--avatar img {
+  border-radius: 50%;
+}
+.header__account--social {
+  display: flex;
+  align-items: center;
+}
+.header__account--social .account__social--icon {
+  margin-right: 6px;
+}
+.header__account--social .account__social--name a {
+  font-family: "MulishBold", sans-serif;
+  font-size: 22px;
+  color: #040034;
+  text-decoration: none;
+}
+.header__logout {
+  display: flex;
+  align-items: center;
+}
+.header__logout--btn {
+  border: 2px solid #040034;
+  padding: 8.5px 27.5px;
+  border-radius: 24.5px;
+}
+.header__logout--btn a {
+  font-size: 18px;
+}
+.header__logout--whatisit {
+  background-color: #040034;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+.header__logout--whatisit img {
+  padding: 11px 10px 11px 11px;
+}
+
+/*# sourceMappingURL=reseller.css.map */
