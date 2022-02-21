@@ -110,5 +110,47 @@
 .dashboard__navigation--information .navigation__information--share-icon {
   margin-left: 11px;
 }
+.dashboard__content {
+  padding-left: 25px;
+  padding-top: 21px;
+  width: 100%;
+}
+.dashboard__content--cards {
+  display: flex;
+  justify-content: space-between;
+}
+.dashboard__content--cards .content__card {
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 315px;
+  height: 144px;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+.dashboard__content--cards .content__card--title h2 {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 20px;
+  color: #040034;
+  letter-spacing: -0.3px;
+}
+.dashboard__content--cards .content__card--icon {
+  margin-right: 10px;
+  background: rgba(4, 0, 52, 0.04);
+  border-radius: 50%;
+}
+.dashboard__content--cards .content__card--icon img {
+  padding: 11px 9px;
+}
+.dashboard__content--cards .content__card--count span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 26px;
+  color: #040034;
+}
+.dashboard__content--cards .content__card--statist {
+  display: flex;
+  margin-top: 15px;
+}
 
 /*# sourceMappingURL=reseller.css.map */

@@ -58,3 +58,41 @@
               text-decoration: none
             &-icon
               margin-left: 11px
+
+  &__content
+    padding-left: 25px
+    padding-top: 21px
+    width: 100%
+    &--cards
+      display: flex
+      justify-content: space-between
+      & .content
+        &__card
+          background: $white
+          box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04)
+          border-radius: 20px
+          width: 100%
+          max-width: 315px
+          height: 144px
+          padding-top: 30px
+          padding-left: 50px
+          &--title
+            h2
+              font-family: $mulish-regular
+              font-size: 20px
+              color: $dark-blue
+              letter-spacing: -0.3px
+          &--icon
+            margin-right: 10px
+            background: rgba(4, 0, 52, 0.04)
+            border-radius: 50%
+            img
+              padding: 11px 9px
+          &--count
+            span
+              font-family: $mulish-bold
+              font-size: 26px
+              color: $dark-blue
+          &--statist
+            display: flex
+            margin-top: 15px
