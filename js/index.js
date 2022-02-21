@@ -3,11 +3,12 @@ const humburger = document.querySelector('.hamburger')
 const header_categories = document.querySelector('.header__categories--menu')
 const header_category = document.querySelector('.header__categories--category')
 
-header_categories.addEventListener('click', function() {
-  humburger.classList.toggle('is-active')
-  header_category.classList.toggle('header-category-active')
-})
-
+if (humburger && header_categories && header_category) {
+  header_categories.addEventListener('click', function() {
+    humburger.classList.toggle('is-active')
+    header_category.classList.toggle('header-category-active')
+  })
+}
 // categories
 const categories_btn = document.querySelectorAll('.categories__category--title')
 const categories_list = document.querySelectorAll('.categories__category--list')
