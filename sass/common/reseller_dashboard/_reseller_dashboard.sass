@@ -1,8 +1,11 @@
 .dashboard
+  &__inner
+    display: flex
   &__navigation
     padding-top: 21px
     padding-right: 33px
-    display: inline-block
+    width: 100%
+    max-width: 310px
     border-right: 1px solid #DAD9DE
     &--list
       display: flex
@@ -16,6 +19,8 @@
       border: 0.5px solid #DAD9DE
       border-radius: 9px
       margin-bottom: 25px
+      &:last-child
+        margin-bottom: 20px
       &.navigaton-item-active
         box-shadow: 0 4px 4px rgba(4, 0, 52, 0.08)
       & .navigation
@@ -26,3 +31,30 @@
               font-family: $mulish-semi
               font-size: 20px
               color: $dark-blue
+    &--information
+      & .navigation
+        &__information
+          &--title
+            h4
+              font-family: $mulish-semi
+              font-size: 16px
+              color: $dark-blue
+          &--desc
+            width: 100%
+            max-width: 247px
+            p
+              font-family: $mulish-regular
+              font-size: 14px
+              color: #DAD9DE
+              line-height: 19px
+          &--share
+            display: flex
+            align-items: center
+            margin-top: 6px
+            &-link
+              font-family: $mulish-semi
+              font-size: 16px
+              color: #4E7BEF
+              text-decoration: none
+            &-icon
+              margin-left: 11px
