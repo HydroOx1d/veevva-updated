@@ -299,5 +299,120 @@
   height: 3px;
   background-color: #040034;
 }
+.addprod__table {
+  margin-top: 20px;
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04);
+  border-radius: 9px;
+}
+.addprod__table--head {
+  padding-top: 35px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #DAD9DE;
+}
+.addprod__table--head .table__head--item h4 {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 16px;
+  color: #DAD9DE;
+}
+.addprod__table--head .table__head--item:last-child {
+  padding-left: 44px;
+}
+.addprod__table--head .table__head--item:first-child h4 {
+  padding-left: 40px;
+}
+.addprod__table--body {
+  padding-bottom: 20px;
+}
+.addprod__table--body .table__body--row {
+  padding: 8px 0;
+  border-bottom: 1px solid #DAD9DE;
+}
+.addprod__table--body .table__body--row:hover {
+  box-shadow: 0 -3px 10px rgba(4, 0, 52, 0.08);
+  border-radius: 9px;
+}
+.addprod__table--body .table__product--image {
+  padding-left: 40px;
+}
+.addprod__table--body .table__product--desc .product__desc--stock {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+}
+.addprod__table--body .table__product--desc .product__desc--stock span {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.addprod__table--body .table__product--desc .product__desc--text {
+  font-family: "MulishLight", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  width: 100%;
+  max-width: 197px;
+  margin-top: 8px;
+  line-height: 16px;
+}
+.addprod__table--body .table__product--desc .product__desc--text strong {
+  font-family: "MulishBold", sans-serif;
+}
+.addprod__table--body .table__product--desc .product--indicator {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #56D141;
+  border-radius: 50%;
+  margin-right: 4.32px;
+}
+.addprod__table--body .table__product--price, .addprod__table--body .table__product--earnings {
+  padding-top: 26px;
+}
+.addprod__table--body .table__product--price span, .addprod__table--body .table__product--earnings span {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 16px;
+  color: #040034;
+}
+.addprod__table--body .table__product--earnings {
+  padding-left: 70px;
+}
+.addprod__table--body .table__product--add {
+  padding-top: 23px;
+  padding-left: 72px;
+}
+.addprod__table--body .table__product--add button {
+  display: inline-block;
+  width: 100%;
+  max-width: 58px;
+  height: 30px;
+  background-color: #040034;
+  border: none;
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.addprod__table--body .table__product--added {
+  padding-top: 23px;
+  padding-left: 72px;
+}
+.addprod__table--body .table__product--added button {
+  display: inline-block;
+  width: 100%;
+  max-width: 58px;
+  height: 30px;
+  background-color: #DAD9DE;
+  border: none;
+  color: #040034;
+  border-radius: 4px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.row {
+  margin: 0 !important;
+}
 
 /*# sourceMappingURL=reseller.css.map */

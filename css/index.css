@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 /* Убираем внутренние отступы */
@@ -462,12 +462,13 @@ select {
 }
 
 .container {
-  width: 100%;
-  max-width: 1320px;
-  margin: 0 auto;
+  width: 100% !important;
+  max-width: 1320px !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
 }
 .container__catalog {
-  max-width: 1380px;
+  max-width: 1380px !important;
 }
 
 .btn {
