@@ -35,6 +35,7 @@
   border-radius: 24.5px;
 }
 .header__logout--whatisit {
+  cursor: pointer;
   background-color: #040034;
   border-radius: 50%;
   margin-left: 20px;
