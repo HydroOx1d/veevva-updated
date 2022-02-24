@@ -39,9 +39,27 @@
   background-color: #040034;
   border-radius: 50%;
   margin-left: 20px;
+  position: relative;
 }
 .header__logout--whatisit img {
   padding: 11px 10px 11px 11px;
+}
+.header__logout--notif {
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 18px;
+  height: 18px;
+  background-color: #EA4C67;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__logout--notif span {
+  color: #ffffff;
+  font-family: "PoppinsSemiBold", sans-serif;
+  font-size: 12px;
 }
 
 .dashboard__inner {
