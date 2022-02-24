@@ -81,3 +81,21 @@ if(account_delivered_modal && account_delivered_return) {
     document.body.removeChild(bgc)
   }
 }
+
+// reseller filter
+
+const filter_blocks = document.querySelector('.filter__blocks')
+const filter_body = document.querySelector('.filter__body')
+const filter_block_item_icon = document.querySelector('.block__item--icon img')
+
+
+if(filter_blocks && filter_body) {
+  filter_blocks.addEventListener('click', function() {
+    filter_body.classList.toggle('filter__body--active')
+    if(filter_body.classList.contains('filter__body--active')) {
+      filter_block_item_icon.style.transform = 'rotate(180deg)'
+    } else {
+      filter_block_item_icon.style.transform = 'rotate(0deg)'
+    }
+  })
+}

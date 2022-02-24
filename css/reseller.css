@@ -232,6 +232,9 @@
   padding-left: 25px;
   padding-top: 23px;
 }
+.addprod__filter {
+  position: relative;
+}
 .addprod__filter .filter__blocks {
   display: flex;
   justify-content: space-between;
@@ -257,6 +260,137 @@
   font-family: "MulishBold", sans-serif;
   font-size: 18px;
   color: #040034;
+}
+.addprod__filter .filter__body {
+  background-color: #ffffff;
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  border-top: 0.5px solid #DAD9DE;
+  box-shadow: 0px 4px 10px rgba(4, 0, 52, 0.08);
+  border-radius: 0 0 9px 9px;
+  position: absolute;
+  z-index: 2;
+}
+.addprod__filter .filter__body.filter__body--active {
+  display: flex;
+}
+.addprod__filter .filter__body .filter__block {
+  width: 100%;
+  max-width: 328px;
+  padding: 20px;
+}
+.addprod__filter .filter__body .filter__block:not(:last-child) {
+  border-right: 1px solid rgba(218, 217, 222, 0.3);
+}
+.addprod__filter .filter__body .filter__block--search {
+  max-width: 254px;
+}
+.addprod__filter .filter__body .filter__block--search input {
+  width: 100%;
+  height: 41px;
+  background-color: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding-left: 45px;
+  background-image: url("../images/marketplace_categories/search.svg");
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+}
+.addprod__filter .filter__body .filter__block--search input::placeholder {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+}
+.addprod__filter .filter__body .filter__block--brand {
+  width: 100%;
+  height: 100%;
+  max-height: 245px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+.addprod__filter .filter__body .filter__block--brand .brand__item {
+  cursor: pointer;
+  width: 100%;
+  max-width: 221px;
+  height: 41px;
+  padding: 6px 22px 12px 8px;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  background-color: #ffffff;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  transition: box-shadow 0.1s ease-in;
+}
+.addprod__filter .filter__body .filter__block--brand .brand__item:hover {
+  box-shadow: 0px 2px 4px rgba(4, 0, 52, 0.1);
+}
+.addprod__filter .filter__body .filter__block--brand .brand__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.addprod__filter .filter__body .filter__block--buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.addprod__filter .filter__body .filter__block--buttons div {
+  cursor: pointer;
+  width: 100%;
+  max-width: 134px;
+  height: 41px;
+  padding: 7px 0 0 14px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  border-radius: 9px;
+  border: 0.5px solid #DAD9DE;
+  background-color: #ffffff;
+  transition: box-shadow 0.1s ease-in;
+}
+.addprod__filter .filter__body .filter__block--buttons div:hover {
+  box-shadow: 0px 2px 4px rgba(4, 0, 52, 0.1);
+}
+.addprod__filter .filter__body .filter__block--inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.addprod__filter .filter__body .filter__block--input input {
+  width: 100%;
+  max-width: 134px;
+  height: 41px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  border-radius: 9px;
+  border: 0.5px solid #DAD9DE;
+  background-color: #ffffff;
+  padding-left: 14px;
+}
+.addprod__filter .filter__body .filter__block--input input::placeholder {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+}
+.addprod__filter .filter__body .filter__block--usage {
+  padding-top: 160px;
+  padding-left: 35px;
+}
+.addprod__filter .filter__body .filter__block--usage .block__usage--buttons button {
+  cursor: pointer;
+  width: 100%;
+  max-width: 110px;
+  height: 41px;
+  background: #ffffff;
+  color: #040034;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 16px;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+}
+.addprod__filter .filter__body .filter__block--usage .block__usage--buttons button:last-child {
+  font-family: "MulishBold", sans-serif;
+  border: 0.5px solid #040034;
+  margin-left: 11px;
 }
 .addprod__nav {
   display: flex;
