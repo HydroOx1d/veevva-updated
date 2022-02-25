@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Veevva</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/company.css">
+  <!--  BOOTSTRAP -->
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">-->
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__account">
+          <div class="header__account--social">
+            <div class="account__social--name">
+              <a href="#">Stalin company ltd.</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__logout">
+          <div class="header__logout--btn">
+            <a href="#" class="btn">Log out</a>
+          </div>
+          <div class="header__logout--whatisit">
+            <img src="./images/reseller/nigga.svg" alt="icon" />
+            <div class="header__logout--notif">
+              <span>7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <main class="dashboard">
+    <div class="container">
+      <div class="dashboard__inner">
+        <!--        Dashboard navigation   -->
+        <nav class="dashboard__navigation">
+          <div class="dashboard__navigation--list">
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="./images/reseller/dashboard/dashboard.svg"
+                     alt="dashboard"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Dashboard</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item navigaton-item-active">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/company/navigation_icon/order_page.svg"
+                     alt="add_products"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Order page</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/add_products.svg"
+                     alt="add_products"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Add products</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/wallet.svg"
+                     alt="wallet"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Wallet</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/company/navigation_icon/account.svg"
+                     alt="wallet"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Account</h2>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+        <!--        Dashboard navigation end   -->
+
+        <!--        Add products content   -->
+        <section class="addprod">
+          <!--          Add products filter   -->
+          <div class="addprod__filter">
+            <div class="filter__blocks">
+              <div class="filter__blocks--item">
+                <div class="blocks__item--title">
+                  <h2>Payment</h2>
+                </div>
+              </div>
+              <div class="filter__blocks--item">
+                <div class="blocks__item--title">
+                  <h2>Fulfillment</h2>
+                </div>
+              </div>
+              <div class="filter__blocks--item">
+                <div class="blocks__item--title">
+                  <h2>Period</h2>
+                </div>
+                <div class="block__item--icon">
+                  <img
+                       src="./images/reseller/addproducts/arrow-bottom.svg"
+                       alt="arrow_bottom"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="filter__body filter__body--active">
+
+              <div class="filter__block">
+                <div class="order_page__filter--buttons">
+                  <div class="active-filter-btn">Paid</div>
+                  <div>Refunded</div>
+                  <div>Pending</div>
+                </div>
+              </div>
+
+              <div class="filter__block">
+                <div class="order_page__filter--buttons">
+                  <div class="active-filter-btn">Pending</div>
+                  <div>Canceled</div>
+                  <div>Shipped</div>
+                  <div>Delivered</div>
+                </div>
+              </div>
+
+              <div class="filter__block">
+                <div class="order_page__filter--buttons last-buttons">
+                  <div class="active-filter-btn">All time</div>
+                  <div>Today</div>
+                  <div>Yesterday</div>
+                  <div>Last 7 days</div>
+                  <div>Last 30 days</div>
+                </div>
+
+                <div class="filter__block--usage order_page__usage">
+                  <div class="block__usage--buttons">
+                    <button>Reset</button>
+                    <button>Apply</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <!--          Add products filter end  -->
+
+          <!--         Order page table   -->
+
+          <div class="order_page__table">
+
+            <div class="order_page__table--head">
+              <div class="table__head--item">
+                <h4>Date</h4>
+              </div>
+              <div class="table__head--item">
+                <h4>Quantity</h4>
+              </div>
+              <div class="table__head--item">
+                <h4>Order ID</h4>
+              </div>
+              <div class="table__head--item">
+                <h4>Amount</h4>
+              </div>
+              <div class="table__head--item">
+                <h4>Fulfillment status</h4>
+              </div>
+            </div>
+
+            <div class="order_page__table--body">
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status shipped">
+                  <span>Shipped</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status delivered">
+                  <span>Delivered</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status pending">
+                  <span>Pending</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+              <div class="table__body--row">
+                <div class="table__body--item">
+                  <span>01.01.2022</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>2</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>#12054753</span>
+                </div>
+
+                <div class="table__body--item">
+                  <span>$29.00</span>
+                </div>
+
+                <div class="table__body--status canceled">
+                  <span>Canceled</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!--          Order page table end  -->
+        </section>
+        <!--        Add products content end   -->
+      </div>
+    </div>
+  </main>
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

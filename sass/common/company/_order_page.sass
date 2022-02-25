@@ -1,0 +1,88 @@
+.order_page
+  &__table
+    background: $white
+    box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04)
+    border-radius: 9px
+    margin-top: 42px
+    &--head
+      display: flex
+      justify-content: space-between
+      padding: 28px 30px 10px
+      border-bottom: 0.5px solid #DAD9DE
+      & .table
+        &__head
+          &--item
+            h4
+              font-family: $mulish-regular
+              font-size: 16px
+              color: #DAD9DE
+    &--body
+      padding-bottom: 28px
+      & .table
+        &__body
+          &--row
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 20px 30px
+            border-bottom: 0.5px solid #DAD9DE
+            &:hover
+              box-shadow: 0 -3px 10px rgba(4,0,52, .08)
+              border-radius: 9px
+          &--item
+            span
+              font-family: $mulish-regular
+              font-size: 14px
+              color: $dark-blue
+          &--status
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 100%
+            max-width: 116px
+            height: 25px
+            span
+              font-family: $mulish-regular
+              font-size: 14px
+            &.canceled
+              background: rgba(234, 76, 103, 0.1)
+              span
+                color: $pink
+            &.shipped
+              background: rgba(86, 209, 65, 0.08)
+              span
+                color: #56D141
+            &.delivered
+              background: rgba(4, 0, 52, 0.1)
+              span
+                color: $dark-blue
+            &.pending
+              background: rgba(255, 158, 13, 0.1)
+              span
+                color: #FF9E0D
+  &__filter
+    &--buttons
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      div
+        cursor: pointer
+        padding: 6.8px 10px
+        background: $white
+        border: 0.5px solid #DAD9DE
+        border-radius: 9px
+        font-family: $mulish-regular
+        font-size: 17px
+        color: $dark-blue
+        transition: box-shadow .1s ease-in
+        margin-bottom: 10px
+        &.active-filter-btn
+          box-shadow: 0px 2px 4px rgba(4, 0, 52, 0.1)
+      &.last-buttons
+        div
+          &:nth-child(5)
+            transform: translateX(-45px)
+  &__usage
+    padding-top: 44px!important
+    padding-left: 50px!important
