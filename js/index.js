@@ -99,3 +99,15 @@ if(filter_blocks && filter_body) {
     }
   })
 }
+
+
+// orders customer status
+
+const status_set = document.querySelector('.customer__status--set')
+const status_variant = document.querySelector('.customer__status--variant')
+
+if(status_set && status_variant) {
+  status_set.addEventListener('click', function() {
+    status_variant.classList.toggle('active-variant')
+  })
+}

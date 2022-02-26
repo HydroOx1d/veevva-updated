@@ -1,0 +1,148 @@
+.orders
+  padding-top: 20px
+  padding-left: 27px
+  width: 100%
+  &__inner
+    background: $white
+    box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04)
+    border-radius: 9px
+    display: flex
+    justify-content: space-between
+  &__ordernum
+    padding: 22px 38px 15px 38px
+    &--head
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+      & .ordernum
+        &__head
+          &--title
+            h4
+              font-family: $mulish-bold
+              font-size: 14px
+              color: #DAD9DE
+            &:first-child
+              margin-right: 55px
+    &--products
+      display: flex
+      align-items: flex-start
+      &:not(:last-child)
+        margin-bottom: 30px
+      & .ordernum
+        &__products
+          &--desc
+            display: block
+            width: 100%
+            max-width: 186px
+            line-height: 1.2
+          &--name
+            padding: 0
+          &--body
+            padding-left: 50px
+          &--count
+            display: flex
+            align-items: center
+            padding-left: 86px
+            div
+              font-size: 14px
+              font-family: $mulish-regular
+              color: $dark-blue
+              &:nth-child(2)
+                padding: 0 13px
+    &--total
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 16px
+      & h2
+        font-family: $mulish-bold
+        font-size: 14px
+        color: $dark-blue
+  &__customer
+    padding: 22px 51px 15px 45px
+    float: right
+    border-left: 0.5px solid #DAD9DE
+    &--body
+      line-height: 1
+      p
+        font-family: $mulish-regular
+        font-size: 14px
+        color: $dark-blue
+        width: 100%
+        max-width: 189px
+      & .customer
+        &__body
+          &--address
+            margin-top: 7px
+            line-height: 1.5
+          &--number
+            margin-top: 25px
+
+          &--email
+            margin-top: 10px
+    &--status
+      display: flex
+      align-items: center
+      margin-top: 65px
+      position: relative
+      & .customer
+        &__status
+          &--info
+            border-radius: 5px
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 116px
+            height: 25px
+            span
+              font-family: $mulish-regular
+              font-size: 14px
+            &.canceled
+              background: rgba(234, 76, 103, 0.1)
+              span
+                color: $pink
+            &.shipped
+              background: rgba(86, 209, 65, 0.08)
+              span
+                color: #56D141
+            &.delivered
+              background: rgba(4, 0, 52, 0.1)
+              span
+                color: $dark-blue
+            &.pending
+              background: rgba(255, 158, 13, 0.1)
+              span
+                color: #FF9E0D
+          &--set
+            cursor: pointer
+            margin-left: 10px
+            width: 20px
+            height: 20px
+            border: 1px solid rgba(4, 0, 52, 0.15)
+            display: flex
+            align-items: center
+            justify-content: center
+            border-radius: 50%
+            & .fa_border
+              display: block
+              width: 15px
+              height: 15px
+              background-color: $dark-blue
+              border-radius: 50%
+          &--variant
+            display: none
+            position: absolute
+            padding: 20px
+            background-color: $white
+            filter: drop-shadow(0px 4px 8px rgba(4, 0, 52, 0.1))
+            border-radius: 9px
+            top: -58px
+            left: -40px
+            & .customer
+              &__status
+                &--info
+                  cursor: pointer
+                  &:not(:last-child)
+                    margin-bottom: 15px
+            &.active-variant
+              display: block
