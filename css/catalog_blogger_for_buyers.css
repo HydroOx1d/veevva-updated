@@ -1,0 +1,163 @@
+.bestsellers {
+  padding-top: 32px;
+}
+.bestsellers__title {
+  display: flex;
+  justify-content: space-between;
+}
+.bestsellers__title--text {
+  font-family: "MulishExtraBold", sans-serif;
+  font-size: 32px;
+  color: #040034;
+}
+.bestsellers__title--link {
+  transform: translateY(35px);
+}
+.bestsellers__title--link a {
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(24, 24, 24, 0.7);
+}
+.bestsellers__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.bestsellers__card {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 315px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.1s ease-in-out;
+}
+.bestsellers__card:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.bestsellers__card--desc {
+  padding-top: 16px;
+  padding-left: 14px;
+}
+.bestsellers__card--price {
+  font-family: "PoppinsBold", sans-serif;
+  font-size: 20px;
+  padding-left: 14px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+.bestsellers__desc--text {
+  display: inline-block;
+  max-width: 235px;
+  font-family: "PoppinsLight", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.bestsellers__desc--text strong {
+  font-family: "PoppinsBold", sans-serif;
+  color: #040034;
+}
+
+@media screen and (max-width: 768px) {
+  .bestsellers {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bestsellers__title--text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .bestsellers__title--link a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bestsellers__card {
+    max-width: 177px;
+  }
+  .bestsellers__card--price {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+  .bestsellers__desc--text {
+    font-size: 12px;
+    line-height: 119.5%;
+  }
+
+  .bestsellers__card--desc {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .categories__title--text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .bestsellers__title--text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .bestsellers__title--link a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .bestsellers__desc--text {
+    font-size: 10px;
+    line-height: 119.5%;
+  }
+  .bestsellers__card {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+  .bestsellers__card--price {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+.newproducts {
+  padding-top: 73px;
+}
+.newproducts__cards {
+  padding-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap row;
+}
+.newproducts__title--link {
+  transform: translateY(40px);
+}
+
+@media screen and (max-width: 768px) {
+  .newproducts {
+    padding-top: 60px;
+  }
+}
+.pagination__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 295px;
+  margin-top: 83px;
+}
+.pagination__list--item {
+  color: #040034;
+  font-family: "MulishBold", sans-serif;
+  font-size: 18px;
+}
+.pagination__list--item.pagination-active {
+  background: #FBFDFF;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=catalog_blogger_for_buyers.css.map */

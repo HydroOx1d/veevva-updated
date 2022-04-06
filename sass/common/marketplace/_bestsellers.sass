@@ -48,3 +48,57 @@
       strong
         font-family: $poppins-bold
         color: $dark-blue
+
+
+
+@media screen and (max-width: 768px)
+  .bestsellers
+    padding-left: 10px
+    padding-right: 10px
+    &__title
+      &--text
+        font-size: 24px
+        line-height: 30px
+      &--link
+        a
+          font-size: 14px
+          line-height: 18px
+    &__card
+      max-width: 177px
+      &--price
+        font-size: 14px
+        line-height: 18px
+        padding-left: 10px
+        padding-top: 0
+    &__desc
+      &--text
+        font-size: 12px
+        line-height: 119.5%
+
+  .bestsellers__card--desc
+    padding: 0 10px
+
+@media screen and (max-width: 425px)
+  .categories__title--text
+    font-size: 24px
+    line-height: 30px
+
+  .bestsellers
+    &__title
+      &--text
+        font-size: 18px
+        line-height: 23px
+      &--link
+        a
+          font-size: 12px
+          line-height: 15px
+    &__desc
+      &--text
+        font-size: 10px
+        line-height: 119.5%
+    &__card
+      max-width: 50%
+      margin-bottom: 10px
+      &--price
+        font-size: 10px
+        line-height: 13px

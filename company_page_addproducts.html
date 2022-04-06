@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Veevva</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/company.css">
+  <!--  BOOTSTRAP -->
+  <!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">-->
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__account">
+          <div class="header__account--social">
+            <div class="account__social--name">
+              <a href="#">Stalin company ltd.</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__logout">
+          <div class="header__logout--btn">
+            <a href="#" class="btn">Log out</a>
+          </div>
+          <div class="header__logout--whatisit">
+            <img src="./images/reseller/nigga.svg" alt="icon" />
+            <div class="header__logout--notif">
+              <span>7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <main class="dashboard">
+    <div class="container">
+      <div class="dashboard__inner">
+        <!--        Dashboard navigation   -->
+        <nav class="dashboard__navigation">
+          <div class="dashboard__navigation--list">
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="./images/reseller/dashboard/dashboard.svg"
+                     alt="dashboard"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Dashboard</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/company/navigation_icon/order_page.svg"
+                     alt="add_products"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Order page</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item navigaton-item-active">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/add_products.svg"
+                     alt="add_products"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Add products</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/wallet.svg"
+                     alt="wallet"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Wallet</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/company/navigation_icon/account.svg"
+                     alt="wallet"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Account</h2>
+              </div>
+            </div>
+
+          </div>
+        </nav>
+        <!--        Dashboard navigation end   -->
+
+        <!--        Add products   -->
+
+        <main class="addproducts">
+
+          <nav class="addprod__nav">
+            <div class="addprod__nav--item addprod-nav-active">
+              <h2>+ Add product</h2>
+            </div>
+            <div class="addprod__nav--item">
+              <h2>Catalog</h2>
+            </div>
+          </nav>
+
+          <section class="addproducts__form">
+
+            <div class="addproducts__form--addtext">
+
+              <div class="form__addtext--input">
+                <label for="addtext--input">Title</label>
+                <input class="addtext--input" type="text" name="white shirt" placeholder="e.g. white shirt">
+              </div>
+
+              <div class="form__addtext--input form__addtext--textarea">
+                <label for="addtext--textarea">Description</label>
+                <textarea class="addtext--textarea" name="white shirt" placeholder="e.g. White T-shirt in a basic closet"></textarea>
+              </div>
+
+              <div class="form__addtext--input form__addtext--select">
+                <label for="addtext--input">Category</label>
+                <select name="" id="addtext--input" class="addtext--input addtext--select">
+                  <option selected disabled>Select category or search</option>
+                </select>
+              </div>
+
+              <div class="form__addtext--input form__addtext--select">
+                <label for="addtext--input">Brand</label>
+                <select name="" id="addtext--input" class="addtext--input addtext--select">
+                  <option selected disabled>Brand</option>
+                </select>
+              </div>
+
+              <div class="form__addtext--row">
+
+                <div class="form__addtext--input addtext--row--input">
+                  <label for="addtext--input">Price</label>
+                  <input class="addtext--input" type="text" name="white shirt" placeholder="$0.00">
+                </div>
+
+                <div class="form__addtext--input addtext--row--input">
+                  <label for="addtext--input">Quantity</label>
+                  <input class="addtext--input" type="text" name="white shirt" placeholder="1">
+                </div>
+
+              </div>
+
+              <div class="form__addtext--input form__addtext--select">
+                <label for="addtext--input">Shipping</label>
+                <select name="" id="addtext--input" class="addtext--input addtext--select">
+                  <option selected disabled>Free</option>
+                </select>
+              </div>
+
+              <div class="form__addvariants">
+
+                <div class="form__addvariants--toggle">
+                  <div class="form__addvariants--text">
+                    <div class="addvariants__text--title">
+                      <h2>Add variants</h2>
+                    </div>
+                    <div class="addvariants__text--desc">
+                      <p>Sell different versions of the same product. For example, multiple colors or sizes.</p>
+                    </div>
+                  </div>
+                  <div class="form__addvariants--icon">
+                    <img src="./images/company/addproducts/arrow-bottom.svg" alt="arrow_bottom">
+                  </div>
+                </div>
+
+                <div class="form__addvariants--body">
+
+                  <nav class="addprod__nav addvariants__nav">
+                    <div class="addprod__nav--item addvariants__nav--item addprod-nav-active">
+                      <h2>Add size & color</h2>
+                    </div>
+                    <div class="addprod__nav--item addvariants__nav--item">
+                      <h2>Add weight</h2>
+                    </div>
+                  </nav>
+
+                  <div class="addvariants__options">
+
+                    <div class="addvariants__options--variant">
+                      <div class="options__variant--title">
+                        <h4>Size</h4>
+                      </div>
+                      <div class="options__variant--field">
+                        <input type="text">
+                      </div>
+                    </div>
+
+                    <div class="addvariants__options--variant">
+                      <div class="options__variant--title">
+                        <h4>Color</h4>
+                      </div>
+
+                      <div class="options__variant--field has-color">
+                        <div class="options__variant--color"></div>
+                        <div class="options__variant--icon">
+                          <img src="./images/company/addproducts/small-arrow-bottom.svg" alt="small_arrow_bottom">
+                        </div>
+                      </div>
+
+                      <div class="options__color--list">
+
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+                        <div class="options__color--item"></div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="addvariants__options--variant">
+                      <div class="options__variant--title">
+                        <h4>Quantity</h4>
+                      </div>
+                      <div class="options__variant--field has-quan">
+                        <input type="text" placeholder="00">
+                      </div>
+                    </div>
+
+                    <div class="addvariants__options--variant">
+                      <div class="options__variant--title">
+                        <h4>Price</h4>
+                      </div>
+                      <div class="options__variant--field has-price">
+                        <input type="text" placeholder="$">
+                      </div>
+                    </div>
+
+                    <div class="addvariants__options--trash">
+                      <img src="./images/company/addproducts/trash.svg" alt="trash">
+                    </div>
+
+                  </div>
+
+                  <div class="addvariants__add">
+                    <img src="./images/company/addproducts/plus.svg" alt="plus">
+                  </div>
+
+                </div>
+
+
+              </div>
+
+              <div class="form__button">
+                <button>Save</button>
+              </div>
+
+            </div>
+
+            <div class="addproducts__form--addimage">
+              <span>Product images</span>
+              <input type="file" name="file" id="file" class="addimage__input">
+              <label for="file"></label>
+            </div>
+          </section>
+
+        </main>
+
+        <!--        Add products end   -->
+      </div>
+
+    </div>
+  </main>
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

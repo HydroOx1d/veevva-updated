@@ -1,0 +1,72 @@
+.privacy_block {
+  padding: 50px 0;
+}
+
+.privacy_block h2 {
+  font-family: "MulishBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+
+.privacy_block span {
+  font-family: "MulishRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  display: block;
+}
+
+.privacy_block h4 {
+  font-family: "MulishBold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  color: #040034;
+  margin-bottom: 20px;
+}
+
+.privacy_block p {
+  font-family: "MulishRegular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  color: #4D4D4D;
+}
+
+@media screen and (max-width: 500px) {
+  .privacy_block {
+    padding: 20px 10px;
+  }
+
+  .privacy_block h2 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .privacy_block h4 {
+    font-size: 12px;
+    line-height: 130%;
+  }
+
+  .privacy_block span {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .privacy_block p {
+    font-size: 12px;
+    line-height: 130%;
+  }
+}
+
+/*# sourceMappingURL=privacy_policy.css.map */

@@ -1,0 +1,321 @@
+.addproducts
+  width: 100%
+  padding-top: 25px
+  padding-left: 25px
+  margin-bottom: 30px
+  &__form
+    display: flex
+
+    margin-top: 22px
+    &--addtext
+      width: 100%
+      max-width: 479px
+    &--addimage
+      display: inline-flex
+      flex-direction: column
+      margin-left: 49px
+      span
+        font-family: $mulish-regular
+        font-size: 17px
+        color: $dark-blue
+        margin-bottom: 6px
+      input
+        display: none
+        width: 0
+        height: 0
+        visibility: hidden
+        opacity: 0
+      label
+        cursor: pointer
+        width: 214px
+        height: 214px
+        border: 1px dashed #DAD9DE
+        border-radius: 9px
+        position: relative
+        &::after
+          content: '+'
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: $dark-blue
+          font-size: 32px
+          font-family: $mulish-light
+
+.form
+  &__addtext
+    &--input
+      margin-bottom: 5px
+      display: flex
+      flex-direction: column
+      label
+        font-family: $mulish-regular
+        font-size: 17px
+        color: $dark-blue
+        margin-bottom: 5px
+      & .addtext--input
+        width: 100%
+        max-width: 479px
+        height: 40px
+        background: $white
+        border: 0.5px solid #DAD9DE
+        border-radius: 9px
+        font-family: $mulish-regular
+        font-size: 17px
+        padding-left: 10px
+        &::placeholder
+          color: #DAD9DE
+          opacity: 1
+          font-family: $mulish-regular
+          font-size: 17px
+
+    &--textarea
+      label
+        margin-left: 10px
+        margin-bottom: 0px
+      & .addtext--textarea
+        resize: none
+        width: 100%
+        max-width: 479px
+        height: 120px
+        background: $white
+        border: 0.5px solid #DAD9DE
+        border-radius: 9px
+        padding-top: 7px
+        padding-left: 10px
+        &::placeholder
+          color: #DAD9DE
+          opacity: 1
+          font-family: $mulish-regular
+          font-size: 17px
+    &--select
+      & .addtext--select
+        color: $dark-blue
+        font-size: 17px
+        font-family: $mulish-regular
+        padding-left: 5px
+
+    &--row
+      display: flex
+      justify-content: space-between
+      margin-bottom: 5px
+      & .addtext--row--input
+        input
+          max-width: 226px
+
+  &__addvariants
+    margin-top: 50px
+    &--toggle
+      cursor: pointer
+      background: $white
+      border: 0.5px solid #DAD9DE
+      box-shadow: 0px 4px 4px rgba(4, 0, 52, 0.04)
+      border-radius: 9px
+      padding: 10px 10px 12px 19px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &.total-variants
+        padding: 20px 10px 20px 19px
+    &--text
+      width: 100%
+      max-width: 283px
+      & .addvariants
+        &__text
+          &--title
+            h2
+              font-family: $mulish-regular
+              font-size: 17px
+              color: $dark-blue
+              letter-spacing: -0.3px
+          &--desc
+            p
+              font-family: $mulish-regular
+              font-size: 14px
+              color: #DAD9DE
+              line-height: 1.2
+
+
+    &--body
+      display: none
+      margin-top: 27px
+      &.is-addvariants-active
+        display: block
+      & .addvariants
+        &__nav
+          &:after
+            bottom: -10px
+          &--item
+            h2
+              font-family: $mulish-medium
+              font-size: 18px
+              letter-spacing: -0.3px
+              &::after
+                bottom: -10px
+                max-width: 100%
+            &:not(:last-child)
+              margin-right: 75px
+        &__options
+          margin-top: 46px
+          display: flex
+          align-items: flex-end
+          position: relative
+          &--variant
+            width: 100%
+            max-width: 113px
+          &--trash
+            cursor: pointer
+            border: .5px solid #DAD9DE
+            padding: 10px 6px
+        &__add
+          border: .5px solid #DAD9DE
+          width: 20px
+          height: 20px
+          margin-top: 11px
+          cursor: pointer
+          display: flex
+          align-items: center
+          justify-content: center
+
+  &__button
+    margin-top: 50px
+    float: right
+    button
+      display: inline-block
+      cursor: pointer
+      width: 151px
+      height: 48px
+      border-radius: 24.5px
+      background-color: $dark-blue
+      color: $white
+      font-family: $mulish-medium
+      font-size: 18px
+      border: none
+
+
+.options
+  &__variant
+    &--title
+      font-family: $mulish-regular
+      font-size: 15px
+      color: $dark-blue
+    &--field
+      width: 100%
+      max-width: 113px
+      height: 36px
+      background: $white
+      border: 0.5px solid #DAD9DE
+      margin-top: 13px
+      input
+        display: inline-block
+        width: 100%
+        height: 100%
+        border: none
+        margin: 0
+        padding: 0 0 0 2px
+        outline: none
+        font-family: $mulish-regular
+        color: $dark-blue
+
+      &.has-color
+        display: flex
+        align-items: center
+        justify-content: space-between
+      &.has-color
+        cursor: pointer
+      &.has-title
+        display: flex
+        align-items: center
+        position: relative
+      span
+        font-family: $mulish-semi
+        font-size: 15px
+        color: $dark-blue
+        padding-left: 3px
+
+    &--color
+      display: inline-block
+      width: 26px
+      height: 26px
+      background-color: #DAD9DE
+      border-radius: 50%
+      margin-left: 40px
+    &--icon
+      margin-right: 7px
+  &__color
+    &--list
+      background: $white
+      box-shadow: 0px 4px 8px rgba(4, 0, 52, 0.1)
+      border-radius: 9px
+      position: absolute
+      left: 0
+      top: 80px
+      width: 100%
+      height: 57px
+      display: none
+      align-items: center
+      padding: 0 10px
+      flex-wrap: nowrap
+      overflow-x: auto
+      -webkit-overflow-scrolling: touch
+      scrollbar-width: none
+      &::-webkit-scrollbar
+        display: none
+      &.is-color-list
+        display: flex
+
+    &--item
+      cursor: pointer
+      flex: 0 0 auto
+      width: 31px
+      height: 31px
+      border-radius: 50%
+      margin: 0 7px
+      background-color: $dark-blue
+      position: relative
+      &:hover::after
+        content: ''
+        position: absolute
+        background: transparent
+        border: 1px solid $dark-blue
+        width: 38px
+        height: 38px
+        border-radius: 50%
+        top: -10%
+        left: -10%
+        transform: translate(-0%,-0%)
+  &__field
+    &--head
+      padding: 0 2px
+      display: flex
+      align-items: center
+      justify-content: space-between
+      width: 100%
+      cursor: pointer
+
+    &--list
+      display: none
+      position: absolute
+      width: 100%
+      background: $white
+      box-shadow: 0px 4px 8px rgba(4, 0, 52, 0.1)
+      border-radius: 9px
+      top: 35px
+      left: 0
+      padding: 10px
+      cursor: pointer
+      font-family: $mulish-semi
+      font-size: 16px
+      color: $dark-blue
+      &.is-field-list
+        display: block
+
+.total-variants__button
+  float: inherit
+  display: flex
+  justify-content: space-between
+  align-items: center
+  a
+    font-family: $mulish-bold
+    font-size: 17px
+    color: $pink

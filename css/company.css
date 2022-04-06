@@ -993,4 +993,548 @@
   display: block;
 }
 
+.company__dashboard {
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 21px;
+}
+.company__table--title {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.company__table--item {
+  padding: 0 40px;
+}
+
+.addproducts {
+  width: 100%;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin-bottom: 30px;
+}
+.addproducts__form {
+  display: flex;
+  margin-top: 22px;
+}
+.addproducts__form--addtext {
+  width: 100%;
+  max-width: 479px;
+}
+.addproducts__form--addimage {
+  display: inline-flex;
+  flex-direction: column;
+  margin-left: 49px;
+}
+.addproducts__form--addimage span {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  margin-bottom: 6px;
+}
+.addproducts__form--addimage input {
+  display: none;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+.addproducts__form--addimage label {
+  cursor: pointer;
+  width: 214px;
+  height: 214px;
+  border: 1px dashed #DAD9DE;
+  border-radius: 9px;
+  position: relative;
+}
+.addproducts__form--addimage label::after {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #040034;
+  font-size: 32px;
+  font-family: "MulishLight", sans-serif;
+}
+
+.form__addtext--input {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.form__addtext--input label {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  margin-bottom: 5px;
+}
+.form__addtext--input .addtext--input {
+  width: 100%;
+  max-width: 479px;
+  height: 40px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  padding-left: 10px;
+}
+.form__addtext--input .addtext--input::placeholder {
+  color: #DAD9DE;
+  opacity: 1;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+}
+.form__addtext--textarea label {
+  margin-left: 10px;
+  margin-bottom: 0px;
+}
+.form__addtext--textarea .addtext--textarea {
+  resize: none;
+  width: 100%;
+  max-width: 479px;
+  height: 120px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+.form__addtext--textarea .addtext--textarea::placeholder {
+  color: #DAD9DE;
+  opacity: 1;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+}
+.form__addtext--select .addtext--select {
+  color: #040034;
+  font-size: 17px;
+  font-family: "MulishRegular", sans-serif;
+  padding-left: 5px;
+}
+.form__addtext--row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.form__addtext--row .addtext--row--input input {
+  max-width: 226px;
+}
+.form__addvariants {
+  margin-top: 50px;
+}
+.form__addvariants--toggle {
+  cursor: pointer;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  box-shadow: 0px 4px 4px rgba(4, 0, 52, 0.04);
+  border-radius: 9px;
+  padding: 10px 10px 12px 19px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form__addvariants--toggle.total-variants {
+  padding: 20px 10px 20px 19px;
+}
+.form__addvariants--text {
+  width: 100%;
+  max-width: 283px;
+}
+.form__addvariants--text .addvariants__text--title h2 {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 17px;
+  color: #040034;
+  letter-spacing: -0.3px;
+}
+.form__addvariants--text .addvariants__text--desc p {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #DAD9DE;
+  line-height: 1.2;
+}
+.form__addvariants--body {
+  display: none;
+  margin-top: 27px;
+}
+.form__addvariants--body.is-addvariants-active {
+  display: block;
+}
+.form__addvariants--body .addvariants__nav:after {
+  bottom: -10px;
+}
+.form__addvariants--body .addvariants__nav--item h2 {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.3px;
+}
+.form__addvariants--body .addvariants__nav--item h2::after {
+  bottom: -10px;
+  max-width: 100%;
+}
+.form__addvariants--body .addvariants__nav--item:not(:last-child) {
+  margin-right: 75px;
+}
+.form__addvariants--body .addvariants__options {
+  margin-top: 46px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+.form__addvariants--body .addvariants__options--variant {
+  width: 100%;
+  max-width: 113px;
+}
+.form__addvariants--body .addvariants__options--trash {
+  cursor: pointer;
+  border: 0.5px solid #DAD9DE;
+  padding: 10px 6px;
+}
+.form__addvariants--body .addvariants__add {
+  border: 0.5px solid #DAD9DE;
+  width: 20px;
+  height: 20px;
+  margin-top: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__button {
+  margin-top: 50px;
+  float: right;
+}
+.form__button button {
+  display: inline-block;
+  cursor: pointer;
+  width: 151px;
+  height: 48px;
+  border-radius: 24.5px;
+  background-color: #040034;
+  color: #ffffff;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 18px;
+  border: none;
+}
+
+.options__variant--title {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 15px;
+  color: #040034;
+}
+.options__variant--field {
+  width: 100%;
+  max-width: 113px;
+  height: 36px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  margin-top: 13px;
+}
+.options__variant--field input {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0 0 0 2px;
+  outline: none;
+  font-family: "MulishRegular", sans-serif;
+  color: #040034;
+}
+.options__variant--field.has-color {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.options__variant--field.has-color {
+  cursor: pointer;
+}
+.options__variant--field.has-title {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.options__variant--field span {
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 15px;
+  color: #040034;
+  padding-left: 3px;
+}
+.options__variant--color {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-color: #DAD9DE;
+  border-radius: 50%;
+  margin-left: 40px;
+}
+.options__variant--icon {
+  margin-right: 7px;
+}
+.options__color--list {
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(4, 0, 52, 0.1);
+  border-radius: 9px;
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 100%;
+  height: 57px;
+  display: none;
+  align-items: center;
+  padding: 0 10px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.options__color--list::-webkit-scrollbar {
+  display: none;
+}
+.options__color--list.is-color-list {
+  display: flex;
+}
+.options__color--item {
+  cursor: pointer;
+  flex: 0 0 auto;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  margin: 0 7px;
+  background-color: #040034;
+  position: relative;
+}
+.options__color--item:hover::after {
+  content: "";
+  position: absolute;
+  background: transparent;
+  border: 1px solid #040034;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  top: -10%;
+  left: -10%;
+  transform: translate(0%, 0%);
+}
+.options__field--head {
+  padding: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.options__field--list {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(4, 0, 52, 0.1);
+  border-radius: 9px;
+  top: 35px;
+  left: 0;
+  padding: 10px;
+  cursor: pointer;
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 16px;
+  color: #040034;
+}
+.options__field--list.is-field-list {
+  display: block;
+}
+
+.total-variants__button {
+  float: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total-variants__button a {
+  font-family: "MulishBold", sans-serif;
+  font-size: 17px;
+  color: #EA4C67;
+}
+
+.company__wallet--card {
+  max-width: 472px;
+  padding: 20px 35px;
+}
+.company__wallet--card:last-child {
+  max-width: 472px;
+  background-image: url("../images/company/wallet/volny.svg");
+  background-repeat: no-repeat;
+  background-position-y: 89%;
+}
+.company__wallet--subblock {
+  margin-top: 10px;
+}
+.company__wallet--subblock input:first-child {
+  margin-bottom: 10px;
+}
+.company__wallet--content {
+  border: 0.576923px solid #DAD9DE;
+  border-radius: 18px;
+  padding: 20px 24px;
+  margin-top: 10px;
+}
+.company__card--body {
+  top: 30%;
+  transform: translate(-50%, -35%);
+}
+
+.wallet__form--block {
+  margin-top: 20px;
+}
+.wallet__card--title {
+  margin-left: 41px !important;
+}
+.wallet__card--flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wallet__card--flex h2 {
+  font-size: 18px !important;
+}
+.wallet__card--flex span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.wallet__content--mastercard {
+  display: flex;
+  justify-content: flex-end;
+}
+.wallet__content--chip {
+  margin-top: 17px;
+}
+.wallet__content--cardnumber {
+  margin-top: 13px;
+  margin-left: 3px;
+}
+.wallet__content--cardnumber span {
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  letter-spacing: 0.2em;
+}
+.wallet__content--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+.wallet__content--name h4, .wallet__content--date h4 {
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+.wallet__content--name {
+  margin-left: 3px;
+}
+.wallet__content--date {
+  margin-right: 13px;
+}
+
+.company-acc {
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 25px;
+}
+.company-acc__percent {
+  background: #ffffff;
+  box-shadow: 0px 0px 8px rgba(4, 0, 52, 0.08);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31.5px 30px;
+}
+.company-acc__percent--info {
+  display: flex;
+  align-items: center;
+}
+.company-acc__percent--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 18px;
+  color: #040034;
+}
+.company-acc__percent--save {
+  float: none;
+  margin-top: 0;
+}
+.company-acc__percent--show {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #DAD9DE;
+  background: #ffffff;
+  border: 1px solid #040034;
+  border-radius: 9px;
+  padding: 6.5px 22px;
+  margin-right: 10px;
+}
+.company-acc__edit {
+  margin-top: 10px;
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04);
+  border-radius: 9px;
+  padding: 15px 0 30px;
+}
+.company-acc__edit--form {
+  margin-top: 20px !important;
+  padding: 0 15px !important;
+}
+.company-acc__edit--title {
+  padding-left: 30px;
+}
+.company-acc__edit--save {
+  float: none;
+  text-align: end;
+  margin-right: 30px;
+}
+
+.edit__form--input {
+  margin-bottom: 18px;
+}
+.edit__form--input input {
+  display: inline-block;
+  width: 100%;
+  height: 36px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding-left: 10px;
+}
+.edit__form--input input::placeholder {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #040034;
+  opacity: 1;
+}
+
+.company-acc2__percent--show {
+  color: #040034;
+}
+.company-acc2__total {
+  padding: 30px;
+}
+.company-acc2__total--text span {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #040034;
+}
+.company-acc2__total--text.mt-30 {
+  margin-top: 30px;
+}
+.company-acc2__total--text.mt-15 {
+  margin-top: 15px;
+}
+.company-acc2__total--edit {
+  margin-top: 0px;
+  float: none;
+  text-align: end;
+}
+
 /*# sourceMappingURL=company.css.map */

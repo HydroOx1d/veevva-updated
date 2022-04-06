@@ -2,11 +2,24 @@
 const humburger = document.querySelector('.hamburger')
 const header_categories = document.querySelector('.header__categories--menu')
 const header_category = document.querySelector('.header__categories--category')
+const header_category_close = document.querySelector('.header__category--close')
 
-if (humburger && header_categories && header_category) {
+if (humburger && header_categories && header_category && header_category_close) {
   header_categories.addEventListener('click', function() {
     humburger.classList.toggle('is-active')
     header_category.classList.toggle('header-category-active')
+    if(document.body.offsetWidth < 576) {
+      if(header_category.classList.contains('header-category-active')) {
+        document.body.style.overflow = 'hidden'
+      }
+    }
+  })
+  header_category_close.addEventListener('click', function() {
+    humburger.classList.remove('is-active')
+    header_category.classList.remove('header-category-active')
+    if(!header_category.classList.contains('header-category-active')) {
+      document.body.style.overflow = 'auto'
+    }
   })
 }
 // categories
@@ -110,4 +123,89 @@ if(status_set && status_variant) {
   status_set.addEventListener('click', function() {
     status_variant.classList.toggle('active-variant')
   })
+}
+
+// open color
+
+const options_variant_field = document.querySelector('.options__variant--field.has-color')
+const options_color_list = document.querySelector('.options__color--list')
+const options_variant_icon = document.querySelector('.options__variant--icon')
+
+if(options_variant_field && options_color_list) {
+  options_variant_field.addEventListener('click', function() {
+    options_color_list.classList.toggle('is-color-list')
+    if(options_color_list.classList.contains('is-color-list')) {
+      options_variant_icon.style.transform = 'rotate(180deg)'
+    } else {
+      options_variant_icon.style.transform = 'rotate(0deg)'
+    }
+  })
+}
+
+// open title list
+
+const options_field_head = document.querySelector('.options__field--head')
+const options_field_head_text = document.querySelector('.options__field--head span')
+const options_field_list = document.querySelector('.options__field--list')
+const options_field_item = document.querySelectorAll('.options__field--item')
+
+if(options_field_head && options_field_head_text && options_field_list && options_field_item) {
+  options_field_head.addEventListener('click', function() {
+    options_field_list.classList.toggle('is-field-list')
+    if(options_field_list.classList.contains('is-field-list')) {
+      options_variant_icon.style.transform = 'rotate(180deg)'
+    } else {
+      options_variant_icon.style.transform = 'rotate(0deg)'
+    }
+  })
+
+  for(let i = 0; i < options_field_item.length; i++) {
+    let item = options_field_item[i]
+    item.addEventListener('click', function(e) {
+      options_field_head_text.textContent = e.target.textContent
+      options_field_list.classList.remove('is-field-list')
+      if(options_field_list.classList.contains('is-field-list')) {
+        options_variant_icon.style.transform = 'rotate(180deg)'
+      } else {
+        options_variant_icon.style.transform = 'rotate(0deg)'
+      }
+    })
+  }
+}
+
+// form addvariants body open
+
+const form_addvariants_toggle = document.querySelector('.form__addvariants--toggle')
+const form_addvariants_body = document.querySelector('.form__addvariants--body')
+const form_addvariants_icon = document.querySelector('.form__addvariants--icon')
+
+if(form_addvariants_body && form_addvariants_toggle) {
+  form_addvariants_toggle.addEventListener('click', function() {
+    form_addvariants_body.classList.toggle('is-addvariants-active')
+    if(form_addvariants_body.classList.contains('is-addvariants-active')) {
+      form_addvariants_icon.style.transform = 'rotate(180deg)'
+    } else {
+      form_addvariants_icon.style.transform = 'rotate(0deg)'
+    }
+  })
+}
+
+// faq items
+
+const accordion_item = document.querySelectorAll('.accordion_item')
+const accordion_head = document.querySelectorAll('.accordion_head')
+const accordion_body = document.querySelectorAll('.accordion_body')
+
+if(accordion_item && accordion_body && accordion_head) {
+  for(let i = 0; i < accordion_item.length; i++) {
+    let item = accordion_item[i]
+    item.addEventListener('click', function() {
+      accordion_head[i].classList.toggle('active')
+      accordion_body[i].classList.toggle('active')
+      if(accordion_body[i].innerText === "") {
+        accordion_head[i].classList.remove('active')
+        accordion_body[i].classList.remove('active')
+      }
+    })
+  }
 }

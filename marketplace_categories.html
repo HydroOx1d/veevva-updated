@@ -18,11 +18,11 @@
     <!--  Wrapper  -->
     <div class="wrapper">
       <!--  Header-->
-      <header class="header">
+      <header class="header" >
         <div class="container">
           <div class="header__inner">
             <div class="header__inner--block-1">
-              <div class="header__logo">LOGOO</div>
+              <div class="header__logo"><img src="./images/header/logo.svg" alt="logo"></div>
               <div class="header__categories">
                 <div class="header__categories--menu">
                   <div class="hamburger hamburger--squeeze">
@@ -33,6 +33,9 @@
                   <span class="header__categories--name">Categories</span>
                 </div>
                 <div class="header__categories--category">
+                  <div class="header__category--close">
+                    <img src="./images/header/close.svg" alt="close">
+                  </div>
                   <div class="header__category--item">
                     <a href="#">Beauty & Personal Care</a>
                   </div>
@@ -72,6 +75,9 @@
                 <img src="./images/header/man.svg" alt="Profile" />
               </div>
             </div>
+            <div class="header__logout">
+              <a href="#" class="btn header__logout--btn">Log out</a>
+            </div>
           </div>
         </div>
       </header>
@@ -83,6 +89,7 @@
           <div class="main__inners">
             <!--      Filter   -->
             <aside class="filter">
+              <!--            + class "active" появляется фильтр   -->
               <!--            Filter header   -->
               <div class="filter__header">
                 <div class="filter__header--title">
@@ -93,7 +100,9 @@
                     />
                   </div>
                   <div class="filter__title--text">
-                    <h2>Filter</h2>
+                    <h2 class="mobile_n">Filter</h2>
+                    <h2 class="mobile_b">Clear all</h2>
+
                   </div>
                 </div>
                 <div class="filter__header--arrow">
@@ -101,6 +110,9 @@
                        src="./images/marketplace_categories/Arrow.svg"
                        alt="Arrow_left"
                   />
+                  <h2>
+                    Done
+                  </h2>
                 </div>
               </div>
               <!--            Filter header end   -->
@@ -648,61 +660,86 @@
               </div>
             </section>
             <!--      Product Block end   -->
-
+           <div class="filter__open">
+              <div class="filter__open--button">
+                Filter
+              </div>
+           </div>
           </div>
         </div>
       </main>
       <!--  main end-->
 
       <!--      Footer   -->
-      <footer class="footer footer__catalog">
+      <footer class="footer footer__catalog" >
         <div class="container">
           <div class="footer__inner">
-            <!--            Footer brand   -->
-            <div class="footer__brand">
-              <div class="footer__brand--logo">
-                <img src="./images/footer/footer_logo.png" alt="Logo" />
-              </div>
-              <div class="footer__brand--copyright">
+            <div class="footer__leftgroup">
+              <!--            Footer brand   -->
+              <div class="footer__brand">
+                <div class="footer__brand--logo">
+                  <img src="./images/footer/footer_logo_white.png" alt="Logo" />
+                </div>
+                <div class="footer__brand--copyright">
                 <span class="footer__copyright--text"
                 >2021 © All rights reserved.</span
                 >
-              </div>
-            </div>
-            <!--            Footer brand end   -->
+                </div>
 
-            <!--            Footer partners   -->
-            <div class="footer__influen">
-              <div class="footer__influen--title">
-                <h2>Influencer</h2>
-              </div>
-              <div class="footer__influen--buttons">
-                <div class="footer__influen--btn">
-                  <a href="#" class="btn">Registration</a>
+                <div class="footer__brand--connection">
+                  <div class="footer__brand--email">
+                    <div class="footer__email--icon">
+                      <img src="./images/footer/Message.svg" alt="Mail" />
+                    </div>
+                    <div class="footer__email--link">
+                      <a href="#">support@veevva.com</a>
+                    </div>
+                  </div>
+                  <div class="footer__brand--social">
+                    <div class="footer__social--link instagram">
+                      <img src="./images/footer/instagram.svg" alt="Instagram" />
+                    </div>
+                    <div class="footer__social--link twitter">
+                      <img src="./images/footer/twitter.svg" alt="Twitter" />
+                    </div>
+                    <div class="footer__social--link youtube">
+                      <img src="./images/footer/youtube.svg" alt="Youtube" />
+                    </div>
+                  </div>
                 </div>
-                <div class="footer__influen--btn">
-                  <a href="#" class="btn">Login</a>
-                </div>
               </div>
-            </div>
-            <!--            Footer partners end   -->
+              <!--            Footer brand end   -->
 
-            <!--            Footer partners   -->
-            <div class="footer__influen manifacture">
-              <div class="footer__influen--title">
-                <h2>Manifacture</h2>
-              </div>
-              <div class="footer__influen--buttons">
-                <div class="footer__influen--btn">
-                  <a href="#" class="btn">Registration</a>
+              <!--            Footer partners   -->
+              <div class="footer__influen">
+                <div class="footer__influen--title">
+                  <h2>Influencer</h2>
                 </div>
-                <div class="footer__influen--btn">
-                  <a href="#" class="btn">Login</a>
-                </div>
-              </div>
-            </div>
-            <!--            Footer partners end   -->
+                <ul class="footer__marketplace--list">
+                  <li class="footer__marketplace--item">
+                    <a href="#">Start selling</a>
+                  </li>
 
+                </ul>
+              </div>
+              <!--            Footer partners end   -->
+
+              <!--            Footer partners   -->
+              <div class="footer__influen manifacture">
+                <div class="footer__influen--title">
+                  <h2>Manifacture</h2>
+                </div>
+                <ul class="footer__marketplace--list">
+                  <li class="footer__marketplace--item">
+                    <a href="#">Manifacture</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!--            Footer partners end   -->
+
+            </div>
+            <div class="footer__rightgroup">
             <!--            Footer marketplace   -->
             <div class="footer__marketplace">
               <div class="footer__marketplace--title">
@@ -759,9 +796,34 @@
             </div>
             <!--            Footer company end   -->
           </div>
+          </div>
         </div>
       </footer>
       <!--      Footer end   -->
+
+      <div class="mobile-navigate">
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/home.svg" alt="home"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/menu.svg" alt="menu"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/basket.svg" alt="basket"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/notif.svg" alt="notification"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/account.svg" alt="account"></a>
+        </div>
+
+      </div>
     </div>
     <!--    Wrapper end-->
 

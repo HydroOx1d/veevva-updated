@@ -1,0 +1,66 @@
+.catalog
+  &__table
+    &--head
+      display: flex
+      justify-content: space-between
+      padding-right: 141px
+    & .table
+      &__head
+        &--item
+          &:first-child
+            margin-right: 30px
+            h4
+              padding-left: 40px
+          &:last-child
+            padding-left: 15px
+          &:nth-child(2)
+            margin-right: 130px
+    &--body
+      & .table
+        &__body
+          &--row
+            display: flex
+            justify-content: space-between
+            padding-right: 40px
+        &__product
+          &--delete
+            padding-top: 23px
+            button
+              display: inline-block
+              width: 100%
+              max-width: 58px
+              height: 30px
+              background: rgba(86, 209, 65, 0.08)
+              border: none
+              color: $dark-blue
+              border-radius: 4px
+              font-family: $mulish-regular
+              font-size: 14px
+              cursor: pointer
+          &--earnings
+            padding-left: 20px
+          &--desc
+            margin-right: 20px
+            margin-left: -15px
+          &--checkbox
+            cursor: pointer
+            width: 51px
+            height: 26px
+            background: #DAD9DE
+            border-radius: 12.8182px
+            margin-top: 26px
+            position: relative
+            &.is-active
+              background: $dark-blue
+            .checkbox
+              width: 22.36px
+              height: 22.36px
+              border-radius: 50%
+              background: $white
+              position: absolute
+              top: 50%
+              left: 2px
+              transform: translateY(-50%)
+              &.is-active
+                left: inherit
+                right: 2px

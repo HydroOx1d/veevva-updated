@@ -1,0 +1,104 @@
+.register_buyers {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.register_buyers-close {
+  cursor: pointer;
+  position: absolute;
+  right: 72px;
+  top: 72px;
+}
+@media screen and (max-width: 767px) {
+  .register_buyers-close {
+    top: 42px;
+    right: 42px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .register_buyers-close {
+    top: 20px;
+    right: 20px;
+  }
+}
+.register_buyers-inner {
+  max-width: 365px;
+  margin: 60px auto 0;
+}
+.register_buyers-logo img {
+  margin: 0 auto;
+}
+.register_buyers__title h2 {
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 30px;
+  color: #040034;
+}
+.register_buyers__form {
+  width: 100%;
+  margin-top: 50px;
+}
+.register_buyers__form--btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 48px;
+  background-color: #EA4C67;
+  border: none;
+  font-family: "MulishSemiBold", sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  border-radius: 24.5px;
+  margin-top: 7px;
+}
+.register_buyers__form--policy {
+  width: 100%;
+  max-width: 320px;
+  margin: 13px 10px;
+}
+.register_buyers__form--policy p {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 14px;
+  color: #9C9A9A;
+  line-height: 1.6;
+}
+.register_buyers__form--hr {
+  display: inline-block;
+  width: 100%;
+  height: 1px;
+  border-color: rgba(221, 221, 221, 0.5);
+  margin-top: 7px;
+}
+.register_buyers__form--havelog {
+  font-family: "MulishMedium", sans-serif;
+  font-size: 14px;
+  color: #9C9A9A;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.register_buyers__form--havelog a {
+  text-decoration: none;
+  color: #040034;
+  margin-left: 4px;
+}
+.register_buyers__form--input input {
+  display: inline-block;
+  width: 100%;
+  height: 32.5px;
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid #040034;
+  font-size: 18px;
+  color: #040034;
+  font-family: "MulishRegular", sans-serif;
+}
+.register_buyers__form--input input::placeholder {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #9A9A9A;
+}
+.register_buyers__form--input:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=register_buyers.css.map */

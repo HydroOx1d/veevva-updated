@@ -42,3 +42,57 @@
         font-family: $mulish-semi
         padding: 10px 0 10px 143px
 
+@media screen and (max-width: 768px)
+  .topsellers
+    &__card
+      margin-bottom: 10px
+      width: 239px
+      &--body
+        padding: 18px 15px
+      &--btn
+        a
+          padding: 5px 0 6px
+          text-align: center
+          display: block
+          font-size: 12px
+          line-height: 19px
+      &--social
+        padding: 14px
+        img
+          width: 18px
+        a
+          font-size: 14px
+          line-height: 19px
+
+@media screen and (max-width: 768px)
+  .topsellers
+     padding-top: 60px
+@media screen and (max-width: 480px)
+
+  .topsellers
+    &__cards
+      margin-top: 10px
+    &__card
+      width: 100%
+      box-shadow: none
+      margin-bottom: 0
+      border-bottom: 0.5px solid #DAD9DE
+
+      &:first-child
+        border-top: 0.5px solid #DAD9DE
+      &--social
+        width: 100%
+        padding: 16px 0 12px
+      &--body
+        display: none
+      &--header
+        background-color: #ffffff
+        border-top-left-radius: 0px
+        border-top-right-radius: 0px
+
+    &__title
+      &--link
+        transform: translateY(0px)
+
+
+

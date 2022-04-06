@@ -1,0 +1,311 @@
+.footer
+  background-color: $dark-blue
+  margin-top: 75px
+  padding-top: 30px
+  padding-bottom: 30px
+  color: $white
+  &__leftgroup
+    display: flex
+  &__rightgroup
+    display: flex
+  &__catalog
+    margin-top: 85px
+  &__inner
+    display: flex
+  &__brand
+    width: 208px
+    display: inline-block
+    margin-right: 130px
+    &--logo
+     img
+       width: 118px
+    &--connection
+      margin-top: 34px
+    &--email
+      display: flex
+      align-items: center
+      margin-left: 2px
+    &--social
+      display: flex
+      margin-top: 15px
+      &--link
+        background-color: #1D1948
+        border-radius: 50%
+        width: 24px
+        height: 24px
+        position: relative
+        margin-right: 16px
+        img
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          width: 24px
+          height: 24px
+
+
+    &--copyright
+      margin-top: 27px
+      line-height: 27px
+
+  &__copyright
+    &--text
+      font-family: $mulish-regular
+      font-size: 16px
+      line-height: 30px
+
+  &__influen
+    margin-top: 3px
+    margin-right: 100px
+    &.manifacture
+      margin-right: 100px
+    &--title
+      margin-bottom: 34px
+      h2
+        font-family: $mulish-regular
+        font-size: 22px
+        color: #F2F2F5
+    &--buttons
+      display: inline-flex
+      flex-direction: column
+    &--btn
+      background-color: $pink
+      text-align: center
+      border-radius: 100px
+      margin-bottom: 20px
+      a
+        display: inline-block
+        padding: 10px 74px
+        font-family: $mulish-semi
+        font-size: 18px
+        color: $white
+      &:nth-child(2)
+        background: transparent
+        border: 2px solid $white
+
+  &__marketplace
+    margin-top: 3px
+    margin-right: 163px
+    &--title
+      margin-bottom: 26px
+      h2
+        font-family: $mulish-bold
+        font-size: 22px
+    &--item
+      margin-bottom: 10px
+      a
+        font-family: $mulish-medium
+        color: $white
+        font-size: 16px
+        text-decoration: none
+  &__company
+    margin-top: 3px
+    &--title
+      margin-bottom: 26px
+    h2
+      font-family: $mulish-bold
+      font-size: 22px
+    &--item
+      margin-bottom: 10px
+      a
+        font-family: $mulish-medium
+        font-size: 16px
+        text-decoration: none
+        color: $white
+
+    &--email
+      display: flex
+      align-items: center
+      margin-left: 2px
+    &--social
+      display: flex
+      margin-top: 15px
+    &--connection
+      margin-top: 34px
+      display: none
+  &__email
+    &--link
+      margin-left: 10px
+      a
+        color: $white
+        font-family: $mulish-medium
+        font-size: 16px
+        text-decoration: none
+  &__social
+    &--link
+      background-color: #1D1948
+      border-radius: 50%
+      width: 24px
+      height: 24px
+      position: relative
+      margin-right: 16px
+      img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+@media screen and (max-width: 1439px)
+  .footer
+    padding: 30px 15px
+    &__inner
+      justify-content: center
+    &__brand
+      width: 176px
+      display: inline-block
+      margin-right: 73px
+      margin-bottom: 40px
+      &--connection
+        display: none
+      &--logo
+         img
+           width: 100px
+    &__leftgroup
+       display: block
+    &__copyright
+      &--text
+        font-family: $mulish-regular
+        font-size: 14px
+        line-height: 30px
+    &__influen
+      margin-top: 3px
+      margin-right: 100px
+      &--title
+        margin-bottom: 10px
+        h2
+          font-family: $mulish-regular
+          font-size: 20px
+          line-height: 30px
+    &__marketplace
+      margin-top: 3px
+      margin-right: 100px
+      &--item
+        margin-bottom: 4px
+        a
+          font-size: 14px
+          line-height: 30px
+      &--title
+        margin-bottom: 34px
+        h2
+          font-family: $mulish-regular
+          font-size: 20px
+          line-height: 30px
+    &__company
+      &--connection
+        display: block
+      &--item
+        margin-bottom: 4px
+        a
+          font-size: 14px
+          line-height: 30px
+        h2
+          font-family: $mulish-regular
+          font-size: 20px
+          line-height: 30px
+
+@media screen and (max-width: 767px)
+  .footer
+    padding: 30px 15px 60px
+    &__rightgroup
+      display: flex
+      justify-content: space-between
+    &__leftgroup
+      margin-bottom: 20px
+    &__inner
+      display: flex
+      flex-direction: column
+      width: 400px
+      margin: auto
+    &__brand
+      display: block
+      width: 100%
+      margin-right: 0
+      margin-bottom: 20px
+      &--logo
+        img
+          width: 70px
+    &__copyright
+      &--text
+        font-family: $mulish-regular
+        font-size: 10px
+        line-height: 30px
+    &__influen
+      display: inline-block
+      margin-right: 20px
+      float: left
+      &--title
+        margin-bottom: 10px
+        h2
+          font-family: $mulish-regular
+          font-size: 14px
+          line-height: 30px
+      &.manifacture
+        margin: 0
+        width: 172px
+        float: right
+        &--title
+          margin-bottom: 10px
+          h2
+            font-family: $mulish-regular
+            font-size: 14px
+            line-height: 30px
+    &__rightgroup
+      display: flex
+    &__email
+      &--icon
+        img
+          max-width: 20px
+    &__company
+      width: 172px
+    &__marketplace
+      margin-top: 3px
+      margin-right: 0px
+      &--item
+        margin-bottom: 4px
+        a
+          font-size: 12px
+          line-height: 30px
+      &--title
+        margin-bottom: 10px
+        h2
+          font-family: $mulish-regular
+          font-size: 14px
+          line-height: 30px
+    &__company
+       &--title
+        margin-bottom: 10px
+       a
+         font-size: 12px
+         line-height: 30px
+       h2
+         font-family: $mulish-regular
+         font-size: 14px
+         line-height: 30px
+    &__email
+      &--link
+        a
+          font-size: 10px
+
+@media screen and (max-width: 430px)
+  .footer
+    &__influen
+      &.manifacture
+        width: 150px
+    &__company
+      width: 150px
+
+@media screen and (max-width: 380px)
+  .footer
+
+    &__inner
+      width: 320px
+    &__influen
+      &.manifacture
+        width: 130px
+    &__company
+      width: 130px
+@media screen and (max-width: 330px)
+  .footer
+    padding: 30px 15px
+    &__inner
+      width: 280px

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cart</title>
+    <!--  FONTS -->
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <!--  STYLE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/cart.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <!--  Wrapper  -->
+    <div class="wrapper">
+      <!--  Header-->
+      <header class="header" >
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__inner--block-1">
+              <div class="header__logo"><img src="./images/header/logo.svg" alt="logo"></div>
+              <div class="header__categories">
+                <div class="header__categories--menu">
+                  <div class="hamburger hamburger--squeeze">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+                  <span class="header__categories--name">Categories</span>
+                </div>
+                <div class="header__categories--category">
+                  <div class="header__category--close">
+                    <img src="./images/header/close.svg" alt="close">
+                  </div>
+                  <div class="header__category--item">
+                    <a href="#">Beauty & Personal Care</a>
+                  </div>
+                  <div class="header__category--item"><a href="#">Baby</a></div>
+                  <div class="header__category--item"><a href="#">Electronics</a></div>
+                  <div class="header__category--item"><a href="#">Fashion</a></div>
+                  <div class="header__category--item">
+                    <a href="#">Health & Household</a>
+                  </div>
+                  <div class="header__category--item"><a href="#">Home & Kitchen</a></div>
+                  <div class="header__category--item"><a href="#">Luggage</a></div>
+                  <div class="header__category--item"><a href="#">Sports</a></div>
+                </div>
+              </div>
+              <div class="header__searchbar">
+                <input type="text" placeholder="Search" />
+              </div>
+            </div>
+            <div class="header__inner--block-2">
+              <div class="header__notif">
+                <img src="./images/header/bell.svg" alt="Bell" />
+                <span class="header__notif--name">Notification</span>
+              </div>
+              <div class="header__basket">
+                <img src="./images/header/basket.svg" alt="Basket" />
+                <span class="header__basket--name">Cart</span>
+              </div>
+              <div class="header__marketplace">
+                <a class="btn header__marketplace--btn" href="#"
+                >Go to the marketplace</a
+                >
+              </div>
+              <div class="header__login">
+                <a class="btn header__login--btn" href="#">Login</a>
+              </div>
+              <div class="header__profile">
+                <img src="./images/header/man.svg" alt="Profile" />
+              </div>
+            </div>
+            <div class="header__logout">
+              <a href="#" class="btn header__logout--btn">Log out</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--  Header end-->
+
+      <!--  main-->
+      <main class="main">
+        <div class="container ">
+          <div class="main__inners cart_container">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__ul">
+                <li><a href="#">Beauty </a></li>
+                <li><a href="#">&nbsp;/ Beauty</a></li>
+                <li>&nbsp;/ Beauty</li>
+              </ul>
+            </div>
+            <div class="cart_body">
+              <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 slider_body">
+                  <div class="col-12 mobile_none col-sm-2">
+                    <div class="swiper mySwiper">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product2.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product2.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-10">
+                    <div class="swiper mySwiper2">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Z2lybHxlbnwwfHwwfHw%3D&w=1000&q=80" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product.png" alt="img" class="img-fluid">
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="./images/marketplace/bestseller/product.png" alt="img" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                  <h1 class="ff-mulish-reg">
+                    <b class="ff-mulish-bold">Tony Moly</b> / Cleancing foam Tony Moly Clean Dew Foam
+                  </h1>
+                  <div class="color_btns">
+                    <div class="color-bg-btn">
+                      <button class="btn-pr-color " onclick="btnActive(this)">
+                      </button>
+                    </div>
+                    <div class="color-bg-btn">
+                      <button class="btn-pr-color active" onclick="btnActive(this)">
+                      </button>
+                    </div>
+
+                    <div class="color-bg-btn">
+                      <button class="btn-pr-color " onclick="btnActive(this)">
+                      </button>
+                    </div>
+
+                    <div class="color-bg-btn">
+                      <button class="btn-pr-color" onclick="btnActive(this)">
+                      </button>
+                    </div>
+
+                    <div class="color-bg-btn">
+                      <button class="btn-pr-color" onclick="btnActive(this)">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="size-btns">
+                    <button class="btn-size rounded active" onclick="btnSize(this)">xs</button>
+                    <button class="btn-size rounded" onclick="btnSize(this)">s</button>
+                    <button class="btn-size rounded" onclick="btnSize(this)">m</button>
+                    <button class="btn-size rounded" onclick="btnSize(this)">l</button>
+                    <button class="btn-size rounded" onclick="btnSize(this)">xl</button>
+                  </div>
+
+                  <div class="prod-quantity">
+                    <button class="btn-quant" onclick="decrement()"><img src="./images/icons/minus.svg" class="img-fluid" alt="minus"></button>
+                    <input type="text" class="product_quantity" value="1" name="quantity" id="">
+                    <button class="btn-quant" onclick="increment()"><img src="./images/icons/plus.svg" class="img-fluid" alt="plus"></button>
+                  </div>
+
+                  <div class="">
+                    <p class="product-price">$28</p>
+                  </div>
+
+                  <div class="">
+                    <button class="btn-prod-add">Go to cart</button>
+                  </div>
+
+                  <div class="my-prod">
+                    <p class="prod-text">Shipping: Free (4-10 days)</p>
+                  </div>
+                  <div class="d-flex">
+                    <div class="col-12">
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <p class="prod-text">Description</p>
+                        </li>
+                        <li class="list-inline-item">
+                          <button class="border-0 bg-white" onclick="openDesc()">
+                            <img
+                                    src="./images/icons/desc-arr.svg"
+                                    class="img-fluid desc-arr"
+                                    alt="arr-up/down"
+                            />
+                          </button>
+                        </li>
+                      </ul>
+                      <div class="prod-desc">
+                        Cleancing foam Tony Moly Clean Dew Foam. Cleancing foam Tony Moly Clean Dew Foam. Cleancing foam Tony
+                        Cleancing foam Tony
+                        <span>
+                      The cleansed and refreshed skin becomes smoother, pores are tightened and face tone becomes clearer,
+                    brighter and more radiant. The active component of the foam is blueberry extract,
+                    rich in microelements and vitamins, contains tannins and acids. Bilberry extract is universal,
+                    so the foam with blueberries is suitable for the care of any type of skin.
+                    The foam can be used for cleansing adolescent and problematic skin;
+                    blueberries have a positive effect on dry, dull and tired skin,
+                    are effective for rejuvenating sagging and fading skin.
+                    The extract has an anti-inflammatory effect, restores blood circulation,
+                    lightens dark circles under the eyes. The bilberry foam has a nourishing and toning effect,
+                    vitaminizes the skin, smoothes wrinkles, reduces puffiness, evens out the complexion.
+                    Skin gets gentle natural glow. Antioxidant properties of blueberries protect the skin from the aggressive effects of free radicals,
+                    minimize the impact of harmful environmental factors. How to use:
+                    Foam the product in the palm of your hand or with a special net,
+                    apply to damp skin massaging movements, then rinse with lukewarm water.
+                    </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="might_like">
+
+            <div class="swiper might_likeSwiper">
+              <div class="might_like_title">
+                You might like
+                <div class="swiper_btns">
+                  <div class="swiper-buttons swiper-button-next"><img src="./images/icons/nav_prev.svg" alt=""></div>
+                  <div class="swiper-buttons swiper-button-prev"><img src="./images/icons/nav_next.svg" alt=""></div>
+                </div>
+                <a href="#" class="view_all">View all</a>
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product__card">
+                    <div class="product__card--image">
+                      <img src="./images/marketplace/bestseller/product.png" alt="product">
+                    </div>
+                    <div class="product__card--desc">
+                  <span class="product__desc--text">
+                    <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean
+                    Dew Foam
+                  </span>
+                    </div>
+                    <div class="product__card--price">
+                      <span>$28.5</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__card">
+                    <div class="product__card--image">
+                      <img src="./images/marketplace/bestseller/product.png" alt="product">
+                    </div>
+                    <div class="product__card--desc">
+                  <span class="product__desc--text">
+                    <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean
+                    Dew Foam
+                  </span>
+                    </div>
+                    <div class="product__card--price">
+                      <span>$28.5</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__card">
+                    <div class="product__card--image">
+                      <img src="./images/marketplace/bestseller/product.png" alt="product">
+                    </div>
+                    <div class="product__card--desc">
+                  <span class="product__desc--text">
+                    <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean
+                    Dew Foam
+                  </span>
+                    </div>
+                    <div class="product__card--price">
+                      <span>$28.5</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__card">
+                    <div class="product__card--image">
+                      <img src="./images/marketplace/bestseller/product.png" alt="product">
+                    </div>
+                    <div class="product__card--desc">
+                  <span class="product__desc--text">
+                    <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean
+                    Dew Foam
+                  </span>
+                    </div>
+                    <div class="product__card--price">
+                      <span>$28.5</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product__card">
+                    <div class="product__card--image">
+                      <img src="./images/marketplace/bestseller/product.png" alt="product">
+                    </div>
+                    <div class="product__card--desc">
+                  <span class="product__desc--text">
+                    <strong>Tony Moly</strong> / Cleancing foam Tony Moly Clean
+                    Dew Foam
+                  </span>
+                    </div>
+                    <div class="product__card--price">
+                      <span>$28.5</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- If we need navigation buttons -->
+
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--  main end-->
+
+      <!--      Footer   -->
+      <footer class="footer footer__catalog" >
+        <div class="container">
+          <div class="footer__inner">
+            <div class="footer__leftgroup">
+              <!--            Footer brand   -->
+              <div class="footer__brand">
+                <div class="footer__brand--logo">
+                  <img src="./images/footer/footer_logo_white.png" alt="Logo" />
+                </div>
+                <div class="footer__brand--copyright">
+                <span class="footer__copyright--text"
+                >2021 © All rights reserved.</span
+                >
+                </div>
+
+                <div class="footer__brand--connection">
+                  <div class="footer__brand--email">
+                    <div class="footer__email--icon">
+                      <img src="./images/footer/Message.svg" alt="Mail" />
+                    </div>
+                    <div class="footer__email--link">
+                      <a href="#">support@veevva.com</a>
+                    </div>
+                  </div>
+                  <div class="footer__brand--social">
+                    <div class="footer__social--link instagram">
+                      <img src="./images/footer/instagram.svg" alt="Instagram" />
+                    </div>
+                    <div class="footer__social--link twitter">
+                      <img src="./images/footer/twitter.svg" alt="Twitter" />
+                    </div>
+                    <div class="footer__social--link youtube">
+                      <img src="./images/footer/youtube.svg" alt="Youtube" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--            Footer brand end   -->
+
+              <!--            Footer partners   -->
+              <div class="footer__influen">
+                <div class="footer__influen--title">
+                  <h2>Influencer</h2>
+                </div>
+                <ul class="footer__marketplace--list">
+                  <li class="footer__marketplace--item">
+                    <a href="#">Start selling</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!--            Footer partners end   -->
+
+              <!--            Footer partners   -->
+              <div class="footer__influen manifacture">
+                <div class="footer__influen--title">
+                  <h2>Manifacture</h2>
+                </div>
+                <ul class="footer__marketplace--list">
+                  <li class="footer__marketplace--item">
+                    <a href="#">Manifacture</a>
+                  </li>
+
+                </ul>
+              </div>
+              <!--            Footer partners end   -->
+
+            </div>
+            <div class="footer__rightgroup">
+            <!--            Footer marketplace   -->
+            <div class="footer__marketplace">
+              <div class="footer__marketplace--title">
+                <h2>Marketplace</h2>
+              </div>
+              <ul class="footer__marketplace--list">
+                <li class="footer__marketplace--item">
+                  <a href="#">Beauty & Personal care</a>
+                </li>
+                <li class="footer__marketplace--item"><a href="#">Baby</a></li>
+                <li class="footer__marketplace--item"><a href="#">Electronics</a></li>
+                <li class="footer__marketplace--item"><a href="#">Fashion</a></li>
+                <li class="footer__marketplace--item"><a href="#">Health & Household</a></li>
+                <li class="footer__marketplace--item"><a href="#">Home & Kitchen</a></li>
+                <li class="footer__marketplace--item"><a href="#">Luggage</a></li>
+                <li class="footer__marketplace--item"><a href="#">Sports</a></li>
+              </ul>
+            </div>
+            <!--            Footer marketplace end   -->
+
+            <!--            Footer company   -->
+            <div class="footer__company">
+              <div class="footer__company--title">
+                <h2>Company</h2>
+              </div>
+              <ul class="footer__company--list">
+                <li class="footer__company--item"><a href="#">FAQ</a></li>
+                <li class="footer__company--item"><a href="#">Shipping</a></li>
+                <li class="footer__company--item"><a href="#">Terms & Conditions</a></li>
+                <li class="footer__company--item"><a href="#">Privacy policy</a></li>
+                <li class="footer__company--item"><a href="#">Cookie policy</a></li>
+              </ul>
+              <div class="footer__company--connection">
+                <div class="footer__company--email">
+                  <div class="footer__email--icon">
+                    <img src="./images/footer/Message.svg" alt="Mail" />
+                  </div>
+                  <div class="footer__email--link">
+                    <a href="#">support@veevva.com</a>
+                  </div>
+                </div>
+                <div class="footer__company--social">
+                  <div class="footer__social--link instagram">
+                    <img src="./images/footer/instagram.svg" alt="Instagram" />
+                  </div>
+                  <div class="footer__social--link twitter">
+                    <img src="./images/footer/twitter.svg" alt="Twitter" />
+                  </div>
+                  <div class="footer__social--link youtube">
+                    <img src="./images/footer/youtube.svg" alt="Youtube" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--            Footer company end   -->
+          </div>
+          </div>
+        </div>
+      </footer>
+      <!--      Footer end   -->
+
+      <div class="mobile-navigate">
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/home.svg" alt="home"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/menu.svg" alt="menu"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/basket.svg" alt="basket"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/notif.svg" alt="notification"></a>
+        </div>
+
+        <div class="mobile-navigate__item">
+          <a href="#"><img src="./images/adaptive_icon/account.svg" alt="account"></a>
+        </div>
+
+      </div>
+    </div>
+    <!--    Wrapper end-->
+
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 20,
+        direction: "vertical",
+      });
+      const swiper2 = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        effect: "fade",
+        thumbs: {
+          swiper: swiper
+        }
+      })
+      var swiper3 = new Swiper(".might_likeSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        arrows:true,
+        loop:true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+          1920: {
+            slidesPerView: 4,
+          },
+          1028: {
+            slidesPerView: 4,
+          },
+          480: {
+            slidesPerView: 4,
+          },
+          300: {
+            slidesPerView: 2,
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -568,4 +568,348 @@
   margin: 0 !important;
 }
 
+.catalog__table--head {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 141px;
+}
+.catalog__table .table__head--item:first-child {
+  margin-right: 30px;
+}
+.catalog__table .table__head--item:first-child h4 {
+  padding-left: 40px;
+}
+.catalog__table .table__head--item:last-child {
+  padding-left: 15px;
+}
+.catalog__table .table__head--item:nth-child(2) {
+  margin-right: 130px;
+}
+.catalog__table--body .table__body--row {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}
+.catalog__table--body .table__product--delete {
+  padding-top: 23px;
+}
+.catalog__table--body .table__product--delete button {
+  display: inline-block;
+  width: 100%;
+  max-width: 58px;
+  height: 30px;
+  background: rgba(86, 209, 65, 0.08);
+  border: none;
+  color: #040034;
+  border-radius: 4px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+.catalog__table--body .table__product--earnings {
+  padding-left: 20px;
+}
+.catalog__table--body .table__product--desc {
+  margin-right: 20px;
+  margin-left: -15px;
+}
+.catalog__table--body .table__product--checkbox {
+  cursor: pointer;
+  width: 51px;
+  height: 26px;
+  background: #DAD9DE;
+  border-radius: 12.8182px;
+  margin-top: 26px;
+  position: relative;
+}
+.catalog__table--body .table__product--checkbox.is-active {
+  background: #040034;
+}
+.catalog__table--body .table__product--checkbox .checkbox {
+  width: 22.36px;
+  height: 22.36px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+.catalog__table--body .table__product--checkbox .checkbox.is-active {
+  left: inherit;
+  right: 2px;
+}
+
+.cart__payments {
+  width: 100%;
+  max-width: 792px;
+}
+
+.payment__block {
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding: 32px 142px 32px 32px;
+}
+.payment__block--title h2 {
+  font-family: "MulishBold", sans-serif;
+  font-size: 20px;
+  color: #040034;
+}
+.payment__block--card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+.payment__block--card .payment__card--type {
+  display: flex;
+  align-items: center;
+}
+.payment__block--card .payment__card--variant {
+  display: flex;
+  align-items: center;
+}
+.payment__block--card .payment__card--variant .card__variant {
+  margin-right: 8px;
+  cursor: pointer;
+}
+.payment__block--card .payment__card--variant .card__variant--more {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 16px;
+  color: #DAD9DE;
+  cursor: pointer;
+}
+.payment__block--card .payment__card--text {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  color: #040034;
+}
+.payment__block--form {
+  width: 100%;
+  margin-top: 20px;
+}
+.payment__block--form .payment__form--input {
+  max-width: 618px;
+}
+.payment__block--form .payment__form--input input {
+  width: 100%;
+  height: 44px;
+  background: #ffffff;
+  border: 0.5px solid #DAD9DE;
+  border-radius: 9px;
+  padding-left: 12px;
+  font-family: "MulishRegular", sans-serif;
+  font-size: 18px;
+  outline: none;
+}
+.payment__block--form .payment__form--input input::placeholder {
+  color: #DAD9DE;
+  opacity: 1;
+}
+.payment__block--form .payment__form--input.card-number {
+  position: relative;
+  margin-bottom: 20px;
+}
+.payment__block--form .payment__form--input.card-number input {
+  background-image: url("../images/buyers_payment/complete.svg");
+  background-repeat: no-repeat;
+  background-position-x: 97%;
+  background-position-y: 15px;
+}
+.payment__block--form .payment__form--input.card-number input::placeholder {
+  color: #040034;
+  opacity: 1;
+}
+.payment__block--form .payment__form--input.expiration-date {
+  width: 299px;
+}
+.payment__block--form .payment__form--input.security-code {
+  width: 299px;
+}
+.payment__protect {
+  display: inline-flex;
+  margin-top: 18px;
+  align-items: center;
+}
+.payment__protect--text {
+  margin-left: 7px;
+}
+.payment__protect--text p {
+  font-family: "MulishRegular", sans-serif;
+  font-size: 14px;
+  color: #040034;
+}
+
+.payment-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.payment__card--radio {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.payment__card--radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  top: -2px;
+  left: -4px;
+  z-index: 10;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.payment__card--radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.payment__card--radio input:checked ~ .checkmark {
+  background-color: #040034;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.payment__card--radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.payment__card--radio .checkmark:after {
+  top: 5px;
+  left: 5px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: white;
+}
+
+.wallet__content--card {
+  background: #ffffff;
+  box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04);
+  border-radius: 9px;
+  padding: 10px 30px;
+  width: 100%;
+  max-width: 566px;
+}
+.wallet__content--card .content__card--title h2 {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.wallet__content--card:last-child {
+  max-width: 379px;
+  position: relative;
+}
+.wallet__content--card:last-child .content__card--title {
+  margin-left: 14px;
+}
+.wallet__content--card:last-child .content__card--title h2 {
+  font-size: 18px;
+  letter-spacing: 0;
+}
+.wallet__card--body {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wallet__card--icon {
+  padding: 12.5px 10.5px;
+  border-radius: 50%;
+  background: rgba(4, 0, 52, 0.04);
+}
+.wallet__card--count {
+  margin-left: 11px;
+}
+.wallet__card--count span {
+  font-family: "MulishBold", sans-serif;
+  font-size: 26px;
+  color: #040034;
+}
+.wallet__form--block {
+  margin-top: 12px;
+}
+.wallet__form--block .payment__form--input {
+  max-width: 506px;
+}
+.wallet__form--block .payment__form--input input {
+  height: 36px;
+  font-size: 14px;
+}
+.wallet__form--block .card-number {
+  margin-bottom: 10px !important;
+}
+.wallet__form--block .card-number input {
+  background-position-y: 10px !important;
+}
+.wallet__form--button {
+  margin-top: 10px;
+  float: right;
+}
+.wallet__form--button button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "MulishMedium", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #040034;
+  border: none;
+  width: 70px;
+  height: 34px;
+  border-radius: 9px;
+}
+.wallet__table--header {
+  display: flex;
+  justify-content: inherit !important;
+}
+.wallet__table--title:nth-child(2) {
+  margin-left: auto;
+}
+.wallet__table--title:nth-child(3) {
+  margin-left: 57px;
+}
+.wallet__table--row {
+  display: flex;
+  justify-content: inherit !important;
+}
+.wallet__table--item:nth-child(2) {
+  margin-left: auto !important;
+}
+.wallet__table--item:nth-child(3) {
+  margin-left: 57px !important;
+}
+
+.wallet-flex {
+  margin-top: 10px !important;
+}
+.wallet-flex .expiration-date {
+  width: 244px !important;
+}
+.wallet-flex .security-code {
+  width: 244px !important;
+}
+
 /*# sourceMappingURL=reseller.css.map */

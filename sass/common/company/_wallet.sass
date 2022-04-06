@@ -1,0 +1,75 @@
+.company
+  &__wallet
+    &--card
+      max-width: 472px
+      padding: 20px 35px
+      &:last-child
+        max-width: 472px
+        background-image: url("../images/company/wallet/volny.svg")
+        background-repeat: no-repeat
+        background-position-y: 89%
+    &--subblock
+      margin-top: 10px
+      & input
+        &:first-child
+          margin-bottom: 10px
+    &--content
+      border: 0.576923px solid #DAD9DE
+      border-radius: 18px
+      padding: 20px 24px
+      margin-top: 10px
+  &__card
+    &--body
+      top: 30%
+      transform: translate(-50%, -35%)
+
+
+
+
+.wallet
+  &__form
+    &--block
+      margin-top: 20px
+  &__card
+    &--title
+      margin-left: 41px!important
+    &--flex
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+      h2
+        font-size: 18px!important
+      span
+        font-family: $mulish-bold
+        font-size: 14px
+        color: $dark-blue
+        text-transform: uppercase
+        cursor: pointer
+  &__content
+    &--mastercard
+      display: flex
+      justify-content: flex-end
+    &--chip
+      margin-top: 17px
+    &--cardnumber
+      margin-top: 13px
+      margin-left: 3px
+      span
+        font-family: $mulish-semi
+        font-size: 14px
+        color: $dark-blue
+        letter-spacing: .2em
+    &--info
+      display: flex
+      justify-content: space-between
+      align-items: center
+      margin-top: 30px
+    &--name, &--date
+      h4
+        font-family: $mulish-semi
+        font-size: 14px
+        color: $dark-blue
+    &--name
+      margin-left: 3px
+    &--date
+      margin-right: 13px

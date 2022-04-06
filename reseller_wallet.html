@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+       name="viewport"
+       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Veevva</title>
+  <!--  FONTS -->
+  <link rel="stylesheet" href="./css/fonts.css" />
+  <!--  STYLE -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/reseller.css" />
+</head>
+<body>
+<!--  Wrapper  -->
+<div class="wrapper">
+  <!--  Header-->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner header__inner--reseller">
+        <div class="header__account">
+          <div class="header__account--avatar">
+            <img src="./images/reseller/avatar.jpg" alt="avatar" />
+          </div>
+          <div class="header__account--social">
+            <div class="account__social--icon">
+              <img src="./images/reseller/instagram.svg" alt="instagram" />
+            </div>
+            <div class="account__social--name">
+              <a href="#">@stalin_official</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__logout">
+          <div class="header__logout--btn">
+            <a href="#" class="btn">Log out</a>
+          </div>
+          <div class="header__logout--whatisit">
+            <img src="./images/reseller/nigga.svg" alt="icon" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--  Header end-->
+
+  <main class="dashboard">
+    <div class="container">
+      <div class="dashboard__inner">
+        <!--        Dashboard navigation   -->
+        <nav class="dashboard__navigation">
+          <div class="dashboard__navigation--list">
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="./images/reseller/dashboard/dashboard.svg"
+                     alt="dashboard"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Dashboard</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/add_products.svg"
+                     alt="add_products"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Add products</h2>
+              </div>
+            </div>
+
+            <div class="dashboard__navigation--item  navigaton-item-active">
+              <div class="navigation__item--icon">
+                <img
+                     src="images/reseller/dashboard/wallet.svg"
+                     alt="wallet"
+                />
+              </div>
+              <div class="navigation__item--title">
+                <h2>Wallet</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard__navigation--information">
+            <div class="navigation__information--title">
+              <h4>Share to receive orders</h4>
+            </div>
+            <div class="navigation__information--desc">
+              <p>
+                Your customers can visit your website and place the orders
+                from this link
+              </p>
+            </div>
+            <div class="navigation__information--share">
+              <a class="navigation__information--share-link" href="#"
+              >veevva.com/adelinejas</a
+              >
+              <a href="#" class="navigation__information--share-icon"
+              ><img src="./images/reseller/dashboard/copy.svg" alt="copy"
+              /></a>
+              <a href="#" class="navigation__information--share-icon"
+              ><img
+                   src="./images/reseller/dashboard/share.svg"
+                   alt="share"
+              /></a>
+            </div>
+          </div>
+        </nav>
+        <!--        Dashboard navigation end   -->
+
+        <!--        Dashboard content   -->
+        <section class="dashboard__content wallet__content">
+          <div class="dashboard__content--cards wallet__content--cards">
+            <div class="wallet__content--card">
+              <div class="content__card--title">
+                <h2>Payout method</h2>
+              </div>
+              <div class="payment__block--form wallet__form--block">
+
+                <div class="payment__form--input card-number">
+                  <input type="text" placeholder="Card number">
+                </div>
+
+                <div class="payment__form--input name-on-card">
+                  <input type="text" placeholder="Name on card">
+                </div>
+
+                <div class="payment-flex wallet-flex">
+                  <div class="payment__form--input expiration-date">
+                    <input type="text" placeholder="Expiration date (MM / YY)">
+                  </div>
+
+                  <div class="payment__form--input security-code">
+                    <input type="text" placeholder="Security code">
+                  </div>
+                </div>
+
+                <div class="wallet__form--button">
+                  <button>Save</button>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="wallet__content--card">
+              <div class="content__card--title">
+                <h2>Total earnings</h2>
+              </div>
+
+              <div class="wallet__card--body">
+                <div class="wallet__card--icon">
+                  <img src="./images/reseller/wallet/wallet.svg" alt="wallet">
+                </div>
+                <div class="wallet__card--count">
+                  <span>$682.05</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="dashboard__transact">
+            <div class="dashboard__transact--title">
+              <h2>Transactions:</h2>
+            </div>
+
+            <div class="transact__table">
+              <div class="transact__table--header wallet__table--header">
+                <div class="transact__table--title wallet__table--title">Date</div>
+                <div class="transact__table--title wallet__table--title">Amount</div>
+                <div class="transact__table--title wallet__table--title">Payment status</div>
+              </div>
+
+              <div class="transact__table--body">
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-refunded wallet__table--item">Pending</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-paid wallet__table--item">Paid</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-refunded wallet__table--item">Pending</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-paid wallet__table--item">Paid</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-paid wallet__table--item">Paid</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-refunded wallet__table--item">Pending</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-paid wallet__table--item">Paid</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-refunded wallet__table--item">Pending</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-paid wallet__table--item">Paid</div>
+                </div>
+
+                <div class="transact__table--row wallet__table--row">
+                  <div class="transact__table--item wallet__table--item">01.01.2022</div>
+                  <div class="transact__table--item wallet__table--item">$10.00</div>
+                  <div class="transact__table--item status-refunded wallet__table--item">Pending</div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--        Dashboard content end   -->
+      </div>
+    </div>
+  </main>
+</div>
+<!--    Wrapper end-->
+
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

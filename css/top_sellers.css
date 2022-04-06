@@ -1,0 +1,235 @@
+.bestsellers {
+  padding-top: 32px;
+}
+.bestsellers__title {
+  display: flex;
+  justify-content: space-between;
+}
+.bestsellers__title--text {
+  font-family: "MulishExtraBold", sans-serif;
+  font-size: 32px;
+  color: #040034;
+}
+.bestsellers__title--link {
+  transform: translateY(35px);
+}
+.bestsellers__title--link a {
+  font-family: "PoppinsRegular", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  color: rgba(24, 24, 24, 0.7);
+}
+.bestsellers__cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.bestsellers__card {
+  cursor: pointer;
+  display: inline-block;
+  max-width: 315px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.1s ease-in-out;
+}
+.bestsellers__card:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+.bestsellers__card--desc {
+  padding-top: 16px;
+  padding-left: 14px;
+}
+.bestsellers__card--price {
+  font-family: "PoppinsBold", sans-serif;
+  font-size: 20px;
+  padding-left: 14px;
+  padding-top: 5px;
+  padding-bottom: 6px;
+}
+.bestsellers__desc--text {
+  display: inline-block;
+  max-width: 235px;
+  font-family: "PoppinsLight", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.bestsellers__desc--text strong {
+  font-family: "PoppinsBold", sans-serif;
+  color: #040034;
+}
+
+@media screen and (max-width: 768px) {
+  .bestsellers {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .bestsellers__title--text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .bestsellers__title--link a {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bestsellers__card {
+    max-width: 177px;
+  }
+  .bestsellers__card--price {
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 10px;
+    padding-top: 0;
+  }
+  .bestsellers__desc--text {
+    font-size: 12px;
+    line-height: 119.5%;
+  }
+
+  .bestsellers__card--desc {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .categories__title--text {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .bestsellers__title--text {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .bestsellers__title--link a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .bestsellers__desc--text {
+    font-size: 10px;
+    line-height: 119.5%;
+  }
+  .bestsellers__card {
+    max-width: 50%;
+    margin-bottom: 10px;
+  }
+  .bestsellers__card--price {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+.topsellers {
+  padding-top: 92px;
+}
+.topsellers__title--link {
+  transform: translateY(39px);
+}
+.topsellers__cards {
+  margin-top: 37px;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.topsellers__card {
+  margin-bottom: 52px;
+  width: 413px;
+  border-radius: 30px;
+  background: #F5F5F5;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.12);
+}
+.topsellers__card--header {
+  background-color: #ffffff;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.topsellers__card--body {
+  padding: 20px 24px;
+}
+.topsellers__card--social {
+  display: flex;
+  align-items: center;
+  transform: translateY(-3px);
+  padding: 25px 24px;
+}
+.topsellers__card--social a {
+  color: #040034;
+  text-decoration: none;
+  font-size: 22px;
+  font-family: "MulishBlack", sans-serif;
+  padding-left: 8px;
+}
+.topsellers__card--btn {
+  background-color: #040034;
+  border-radius: 1000px;
+  margin-top: 5px;
+}
+.topsellers__card--btn a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: "MulishSemiBold", sans-serif;
+  padding: 10px 0 10px 143px;
+}
+
+@media screen and (max-width: 768px) {
+  .topsellers__card {
+    margin-bottom: 10px;
+    width: 239px;
+  }
+  .topsellers__card--body {
+    padding: 18px 15px;
+  }
+  .topsellers__card--btn a {
+    padding: 5px 0 6px;
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    line-height: 19px;
+  }
+  .topsellers__card--social {
+    padding: 14px;
+  }
+  .topsellers__card--social img {
+    width: 18px;
+  }
+  .topsellers__card--social a {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .topsellers {
+    padding-top: 60px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .topsellers__cards {
+    margin-top: 10px;
+  }
+  .topsellers__card {
+    width: 100%;
+    box-shadow: none;
+    margin-bottom: 0;
+    border-bottom: 0.5px solid #DAD9DE;
+  }
+  .topsellers__card:first-child {
+    border-top: 0.5px solid #DAD9DE;
+  }
+  .topsellers__card--social {
+    width: 100%;
+    padding: 16px 0 12px;
+  }
+  .topsellers__card--body {
+    display: none;
+  }
+  .topsellers__card--header {
+    background-color: #ffffff;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .topsellers__title--link {
+    transform: translateY(0px);
+  }
+}
+
+/*# sourceMappingURL=top_sellers.css.map */

@@ -1,0 +1,94 @@
+.wallet
+  &__content
+    &--card
+      background: $white
+      box-shadow: 0px 16px 24px rgba(4, 0, 52, 0.06), 0px 2px 6px rgba(4, 0, 52, 0.04), 0px 0px 1px rgba(4, 0, 52, 0.04)
+      border-radius: 9px
+      padding: 10px 30px
+      width: 100%
+      max-width: 566px
+      & .content
+        &__card
+          &--title
+            h2
+              font-size: 18px
+              letter-spacing: 0
+      &:last-child
+        max-width: 379px
+        position: relative
+        & .content
+          &__card
+            &--title
+              margin-left: 14px
+              h2
+                font-size: 18px
+                letter-spacing: 0
+  &__card
+    &--body
+      display: flex
+      align-items: center
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+    &--icon
+      padding: 12.5px 10.5px
+      border-radius: 50%
+      background: rgba(4, 0, 52, 0.04)
+    &--count
+      margin-left: 11px
+      span
+        font-family: $mulish-bold
+        font-size: 26px
+        color: $dark-blue
+
+  &__form
+    &--block
+      margin-top: 12px
+      & .payment__form--input
+        max-width: 506px
+        input
+          height: 36px
+          font-size: 14px
+      & .card-number
+        margin-bottom: 10px!important
+        input
+          background-position-y: 10px!important
+    &--button
+      margin-top: 10px
+      float: right
+      button
+        cursor: pointer
+        display: inline-block
+        font-family: $mulish-medium
+        font-size: 14px
+        color: $white
+        background-color: $dark-blue
+        border: none
+        width: 70px
+        height: 34px
+        border-radius: 9px
+  &__table
+    &--header
+      display: flex
+      justify-content: inherit!important
+    &--title
+      &:nth-child(2)
+        margin-left: auto
+      &:nth-child(3)
+        margin-left: 57px
+    &--row
+      display: flex
+      justify-content: inherit!important
+    &--item
+      &:nth-child(2)
+        margin-left: auto!important
+      &:nth-child(3)
+        margin-left: 57px!important
+
+.wallet-flex
+  margin-top: 10px!important
+  & .expiration-date
+    width: 244px!important
+  & .security-code
+    width: 244px!important

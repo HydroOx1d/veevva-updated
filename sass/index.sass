@@ -4,6 +4,10 @@
 
 @import 'common/layouts/header'
 @import 'common/layouts/footer'
+@import 'common/mobile-navigate/mobile-navigate'
+
+.wrapper
+  overflow: hidden
 
 .container
   width: 100%!important
@@ -12,11 +16,13 @@
   padding: 0!important
   &__catalog
     max-width: 1380px!important
+  @media screen and (max-width: 1319px)
+    padding: 0 15px!important
 
 .btn
-  color: $dark-blue
   text-decoration: none
   font-family: $mulish-medium
+  border-radius: 24.5px
 
 .d-flex
   display: flex
@@ -30,3 +36,16 @@
   width: 100%
   height: 100%
   background-color: rgba(0,0,0, .2)
+
+//@media screen and (max-width: 1024px)
+//  .main
+//    overflow: hidden
+//  body
+//    padding-left: 15px
+//    padding-right: 15px
+//
+//
+//@media screen and (max-width: 768px)
+//  body
+//    padding-left: 15px
+//    padding-right: 15px

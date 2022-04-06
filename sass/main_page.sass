@@ -1,0 +1,485 @@
+@import 'common/utilites/variables'
+@import 'common/marketplace/categories'
+@import 'common/marketplace/bestsellers'
+@import 'common/marketplace/topsellers'
+
+.banner
+  height: 879px
+  background: url(../images/banner/banner_bg.png) no-repeat center
+  background-size: contain
+  margin-top: 106px
+  display: flex
+  align-items: center
+  flex-direction: column
+
+
+.banner h1
+  font-family: "MulishBlack"
+  font-style: normal
+  font-weight: 900
+  font-size: 78px
+  line-height: 102.5%
+  text-align: center
+  text-transform: uppercase
+  max-width: 870px
+  color: #040034
+
+
+.banner p
+  font-family: "MulishRegular"
+  font-style: normal
+  font-weight: normal
+  font-size: 26px
+  line-height: 143%
+  text-align: center
+  color: #040034
+  max-width: 472px
+  margin-top: 40px
+  margin-bottom: 40px
+
+
+.banner a.btn
+  width: 252px
+  background: #EA4C67
+  border-radius: 24.5px
+  color: #ffffff
+  font-family: "MulishRegular"
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 20px
+  text-align: center
+  font-feature-settings: 'salt' on, 'liga' off
+  padding: 14px 0
+  margin-bottom: 29px
+
+
+.text_banner
+  width: 668px
+  text-align: center
+
+
+.text_banner h3
+  font-family: "MulishBlack"
+  font-style: normal
+  font-weight: 900
+  font-size: 36px
+  line-height: 45px
+  text-align: center
+  text-transform: uppercase
+  margin-bottom: 50px
+  margin-top: 50px
+  color: #040034
+
+
+.text_banner p
+  width: 100%
+  margin: 0
+  max-width: inherit
+  line-height: 143.5%
+
+
+.step_body
+  display: flex
+  justify-content: space-between
+
+
+.step_body .step_text
+  padding: 88px 72px 0
+
+
+.steps
+  margin-bottom: 90px
+  height: 353px
+
+
+.steps.step_first
+  background: #040034
+  border-radius: 30px
+
+
+.steps.step_second
+  background: #EA4C67
+  border-radius: 30px
+
+
+.steps.step_third
+  background: #0D6000
+  border-radius: 30px
+
+
+.step_text h3.title_step
+  font-family: "MulishBlack"
+  font-style: normal
+  font-weight: 900
+  font-size: 34px
+  line-height: 48px
+  text-transform: uppercase
+  font-feature-settings: 'salt' on, 'liga' off
+  color: #FFFFFF
+
+
+.step_text p
+  font-family: "MulishRegular"
+  font-style: normal
+  font-weight: normal
+  font-size: 24px
+  line-height: 41px
+  font-feature-settings: 'salt' on, 'liga' off
+  margin-top: 25px
+  color: #FFFFFF
+
+
+.step_img
+  position: relative
+  width: 30px
+
+
+.step_img img
+  position: absolute
+
+
+.steps.step_first .step_img
+  width: 420px
+
+
+.steps.step_first .step_img img
+  top: -134px
+  left: 0
+
+
+.steps.step_second .step_img
+  width: 462px
+
+
+.steps.step_second .step_text
+  width: 672px
+
+
+.steps.step_second .step_img img
+  top: -95px
+  left: -25px
+
+
+.steps.step_third .step_text
+  width: 882px
+  padding-right: 0
+
+
+.steps.step_third .step_img
+  width: 434px
+
+
+.steps.step_third .step_img img
+  width: 523px
+  top: -103px
+  left: -18px
+  max-width: inherit
+
+
+.categories_grid
+  width: 1111px !important
+
+
+.p_0
+  padding: 5px !important
+
+
+.p_15
+  padding: 0 15px
+
+
+.category_item
+  width: 270px
+  height: 270px
+  background: #FFFFFF
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 8%)
+  border-radius: 30px
+  display: block
+  padding: 0 18px 18px 18px
+  text-decoration: none
+  text-align: center
+  transition: box-shadow 0.1s ease-in-out
+  margin-bottom: 30px
+
+
+.category_item:hover
+  box-shadow: 1px 1px 8px rgb(0 0 0 / 20%)
+  transition: box-shadow 0.1s ease-in-out
+
+
+.category_item img
+  width: 192px
+  height: 192px
+  margin: 0 auto
+  object-fit: cover
+
+
+.category_item span
+  font-family: MulishRegular
+  font-style: normal
+  font-weight: 600
+  font-size: 26px
+  line-height: 33px
+  text-align: center
+
+  color: #040034
+
+
+
+.title_section
+  margin-bottom: 80px
+
+
+.title_section h2
+  font-family: "MulishBlack"
+  font-style: normal
+  font-weight: 900
+  font-size: 32px
+  line-height: 40px
+  text-align: center
+  text-transform: uppercase
+  color: #040034
+
+
+div.link_to
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 110px 0 0
+
+
+.link_to_market
+  width: 252px
+  background: #EA4C67
+  border-radius: 24.5px
+  color: #ffffff
+  font-family: "MulishRegular"
+  font-style: normal
+  font-weight: 600
+  font-size: 18px
+  line-height: 20px
+  text-align: center
+  font-feature-settings: 'salt' on, 'liga' off
+  padding: 14px 0
+  margin-bottom: 29px
+  text-decoration: none
+
+
+section#steps
+  margin-top: 110px
+
+
+.m_block
+  display: none
+
+
+@media screen and (max-width: 1440px)
+  .steps.step_third .step_text
+    padding-right: 0
+
+
+  .steps.step_third .step_img img
+    width: 448px
+    top: -35px
+    left: -18px
+    max-width: inherit
+  .steps
+    height: inherit
+  .step_img
+    width: 28%
+    img
+      position: initial
+
+  .step_body
+    .step_text
+      width: 78%
+      padding: 40px 72px
+
+
+@media screen and (max-width: 768px)
+  main
+    padding-right: 15px
+    padding-left: 15px
+
+
+  .banner h1
+    font-size: 54px
+    line-height: 111.5%
+    width: 592px
+
+
+  .banner p
+    font-size: 24px
+    line-height: 143%
+
+
+  .banner a.btn
+    font-size: 14px
+    line-height: 20px
+
+
+  .text_banner h3
+    font-size: 30px
+    line-height: 38px
+
+
+  .step_body
+    width: 416px
+    flex-direction: column
+    margin: 0 auto
+    padding-bottom: 50px
+    padding-top: 50px
+
+
+  .step_body .step_text
+    padding: 0
+
+
+  .steps
+    height: inherit
+    margin-bottom: 40px
+
+
+  .step_img img
+    position: initial
+
+
+  .steps.step_second .step_text, .steps.step_third .step_text
+    width: 100%
+
+
+  .steps.step_second .step_body
+    align-items: flex-start
+
+
+  .m_block
+    display: block
+
+
+  .m_none
+    display: none
+
+
+  .steps.step_first .step_img img
+    width: 393px
+    margin: 0 auto
+
+
+  .steps.step_second .step_img img
+    width: 375px
+    margin: 0 auto
+
+
+  .steps.step_third .step_img img
+    width: 415px
+    margin: 0 auto
+
+
+  .step_text h3.title_step
+    font-size: 34px
+
+
+  .categories_grid
+    width: 614px !important
+
+
+  .category_item
+    width: 146px
+    height: 146px
+
+
+  .category_item img
+    width: 90px
+    height: 90px
+
+
+  .category_item span
+    font-size: 16px
+    line-height: 20px
+
+
+  div.link_to
+    padding: 50px 0 0
+
+
+  #categories
+    margin-top: 80px
+
+
+
+@media screen and (max-width: 500px)
+  #categories
+    display: none
+
+  .step_text h3.title_step
+    font-size: 17px
+    line-height: 17px
+    text-align: center
+
+
+  .step_text p
+    font-size: 17px
+    line-height: 17px
+    text-align: center
+
+
+  .steps .step_body
+    padding: 36px 13px
+    width: 100% !important
+
+
+  .steps .step_img, .steps .step_img img
+    width: 100% !important
+
+
+  .banner h1
+    font-size: 28px
+    line-height: 115%
+    width: 232px
+
+
+  .banner p
+    font-size: 14px
+    line-height: 143%
+    width: 250px
+
+
+  .banner a.btn
+    font-size: 12px
+    width: 166px
+    line-height: 20px
+    padding: 7px 0
+    margin-bottom: 15px
+
+
+  .banner img
+    width: 15px
+
+
+  .text_banner h3
+    font-size: 18px
+    line-height: 23px
+    margin-bottom: 30px
+    margin-top: 23px
+
+
+  .banner p
+    font-size: 14px
+    line-height: 143%
+    width: 280px
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    margin-top: 15px
+    margin-bottom: 26px
+
+
+  .banner
+    height: 514px
+    background: none
+
+
+  section#steps
+    margin-top: 24px
+
